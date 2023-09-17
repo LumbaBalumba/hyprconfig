@@ -1,7 +1,7 @@
 {
     "modules-left": ["custom/arch", "hyprland/workspaces"],
     "modules-center": [],
-    "modules-right": ["cpu", "memory", "temperature", "clock", custom/weather", "custom/notification" ,"network", "pulseaudio", "backlight", "battery"],
+    "modules-right": ["cpu", "memory", "temperature", "clock", "custom/weather", "custom/notification" ,"network", "pulseaudio", "backlight", "battery"],
     "clock": {
         "format": "{:%e %B %Y %H:%M}",
         "timezone": "Europe/Moscow",
