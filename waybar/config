@@ -40,7 +40,7 @@
     "network": {
         "format": " {signalStrength}",
         "tooltip": false,
-        "on-click": "nm-applet"
+        "on-click": "nm-connection-editor"
     },
     "pulseaudio": {
         "format": " {volume}",
