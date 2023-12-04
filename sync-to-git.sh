@@ -1,1 +1,1 @@
-cp ~/.config/alacritty ~/.config/hypr ~/.config/mako ~/.config/neofetch/ ~/.config/nvim ~/.config/swaync ~/.config/waybar/ ~/.config/wob ~/.config/wofi  . -r
+cp ~/.config/alacritty ~/.config/hypr ~/.config/mako ~/.config/neofetch/ ~/.config/nvim ~/.config/swaync ~/.config/waybar/ ~/.config/wob ~/.config/wofi ~/.config/btop . -r
