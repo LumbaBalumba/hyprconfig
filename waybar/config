@@ -17,12 +17,12 @@
         "tooltip": false
     },
     "cpu": {
-        "format": " {}",
+        "format": "{}",
         "tooltip": false,
         "on-click": "alacritty --hold -e btop"
     },
     "memory": {
-        "format": " {usage}",
+        "format": " {}",
         "tooltip": false,
         "on-click": "alacritty --hold -e btop"
     },
