@@ -1,7 +1,11 @@
 {
     "modules-left": ["custom/arch", "hyprland/workspaces"],
     "modules-center": [],
-    "modules-right": ["cpu", "memory", "temperature", "clock", "custom/weather", "custom/notification" ,"network", "pulseaudio", "backlight", "battery"],
+    "modules-right": ["cpu", "memory", "temperature", "hyprland/language", "clock", "custom/weather", "network", "pulseaudio", "backlight", "battery"],
+    "hyprland/language": {
+       "format": "{}",
+       "format-us": "us"
+    },
     "clock": {
         "format": "{:%e %B %Y %H:%M}",
         "timezone": "Europe/Moscow",
@@ -33,13 +37,15 @@
     },
     "network": {
         "format": " {signalStrength}",
-        "tooltip": false
+        "tooltip": false,
+        "on-click": "nm-applet"
     },
     "pulseaudio": {
-        "format": " {volume}",
+        "format": " {volume}",
         "format-bluetooth": " {volume}",
         "format-muted": "",
-        "tooltip": false
+        "tooltip": false,
+        "on-click": "volumectl toggle"
     },
     "custom/arch": {
         "format": "",

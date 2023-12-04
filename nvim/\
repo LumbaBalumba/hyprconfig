@@ -1,12 +1,9 @@
 local plugins = {
-    {
-    {
-      "dinhhuy258/git.nvim"
-    },
+  {
     {
       "jose-elias-alvarez/null-ls.nvim",
       event = "VeryLazy",
-      ft = {"python", "go"},
+      ft = {"python"},
       opts = function()
         return require "custom.configs.null-ls"
       end,
@@ -23,11 +20,8 @@ local plugins = {
           "clangd",
           "clangd-format",
           "codelldb",
-          "typescript-language-server",
-          "eslint-lsp",
-          "prettier",
-          "gopls"
-        },
+          "typescript-language-server"
+      },
     },
   },
   {
@@ -76,21 +70,6 @@ local plugins = {
     end,
   },
   {
-    "dreamsofcode-io/nvim-dap-go",
-    ft = "go",
-    dependencies = "mfussenegger/nvim-dap",
-    config = function (_, opts)
-      require("dap-go").setup(opts)
-      require("core.utils").load_mappings("dap_go")
-    end
-  },
-  {
-    "mfussenegger/nvim-lint",
-      config = function ()
-        require "custom.configs.lint"
-      end
-  },
-  {
     "jay-babu/mason-nvim-dap.nvim",
     event = "VeryLazy",
     dependencies = {
@@ -118,13 +97,6 @@ local plugins = {
       dap.listeners.before.event_exited["dapui_config"] = function ()
         dapui.close()
       end
-    end
-  },
-  {
-    "mhartington/formatter.nvim",
-    event = "VeryLazy",
-    opts = function ()
-        return require "custom.configs.formatter"
     end
   },
 }
