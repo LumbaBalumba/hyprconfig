@@ -1,16 +1,5 @@
 local plugins = {
     {
-    {
-      "dinhhuy258/git.nvim"
-    },
-    {
-      "jose-elias-alvarez/null-ls.nvim",
-      event = "VeryLazy",
-      ft = {"python", "go"},
-      opts = function()
-        return require "custom.configs.null-ls"
-      end,
-    },
     "williamboman/mason.nvim",
     opts = {
         ensure_installed = {
@@ -21,7 +10,6 @@ local plugins = {
           "debugpy",
           "rust-analyzer",
           "clangd",
-          "clangd-format",
           "codelldb",
           "typescript-language-server",
           "eslint-lsp",
@@ -127,6 +115,17 @@ local plugins = {
         return require "custom.configs.formatter"
     end
   },
-}
+  {
+    "dinhhuy258/git.nvim"
+  },
+  {
+    "jose-elias-alvarez/null-ls.nvim",
+    event = "VeryLazy",
+    ft = {"python", "go"},
+    opts = function()
+      return require "custom.configs.null-ls"
+    end,
+  },
+ }
 
 return plugins
