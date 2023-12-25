@@ -17,7 +17,7 @@ lspconfig.clangd.setup({
     on_attach(client, bufnr)
   end,
   capabilities = capabilities,
-  cmd = {"clangd", "--offset-encoding=utf-16", "-std=c++23", "--clang-tidy", "--clang-tidy-checks", "*"}
+  cmd = {"clangd", "--offset-encoding=utf-16"}
 })
 
 local function organize_imports()

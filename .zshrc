@@ -119,4 +119,4 @@ export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
-export PGDATA="/var/lib/postgres/data/"
+alias setup-python="/usr/bin/python -m venv .venv ; source .venv/bin/activate"

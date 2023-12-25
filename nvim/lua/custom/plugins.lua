@@ -126,6 +126,10 @@ local plugins = {
       return require "custom.configs.null-ls"
     end,
   },
+  {
+    "Civitasv/cmake-tools.nvim",
+    require "custom.configs.cmake-tools",
+  },
  }
 
 return plugins
