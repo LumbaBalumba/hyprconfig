@@ -1,3 +1,4 @@
+yay -S - < yay-packages
 cp nvim qt5ct alacritty hypr mako neofetch swaync waybar wob wofi ~/.config -r
 cp .zshrc ~/
 cp .clang-format ~/
