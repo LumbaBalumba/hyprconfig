@@ -28,7 +28,8 @@ M.dap_python = {
     ["<leader>dpr"] = {
       function ()
         require("dap-python").test_method()
-      end
+      end,
+      "Debug Python"
     }
   }
 }
@@ -49,6 +50,29 @@ M.dap_go = {
       "Debug last go test"
     }
   }
+}
+
+
+M.cmake_tools = {
+  --plugin = true,
+  n = {["<leader>Cg"] = {
+        "<cmd> CMakeGenerate <CR>",
+        "Generate CMake environment"
+    },
+    ["<leader>Cb"] = {
+        "<cmd> CMakeBuild <CR>",
+        "Build CMake project"
+    },
+    ["<leader>Cr"] = {
+        "<cmd> CMakeRun  <CR>",
+        "Run CMake project"
+    },
+    ["<leader>Cd"] = {
+        "<cmd> CMakeDebug <CR>",
+        "Debug CMake project"
+    }
+
+    }
 }
 
 return M

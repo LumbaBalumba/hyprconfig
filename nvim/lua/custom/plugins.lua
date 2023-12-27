@@ -1,6 +1,7 @@
 local plugins = {
     {
     "williamboman/mason.nvim",
+    lazy = false,
     opts = {
         ensure_installed = {
           "pyright",
@@ -12,14 +13,20 @@ local plugins = {
           "clangd",
           "codelldb",
           "typescript-language-server",
+          "elixir-ls",
           "eslint-lsp",
           "prettier",
-          "gopls"
+          "gopls",
+          "cmake-language-server",
+          "cmakelang",
+          "cmakelint",
+          "neocmakelsp"
         },
     },
   },
   {
     "neovim/nvim-lspconfig",
+    lazy = false,
     config = function ()
       require "plugins.configs.lspconfig"
       require "custom.configs.lspconfig"
@@ -27,13 +34,13 @@ local plugins = {
   },
   {
     "rust-lang/rust.vim",
-    event = "VeryLazy",
+    lazy = false,
     ft = "rust",
     init = function()
       vim.g.rustfmt_autosave = 1
     end
   },
-  {
+  {lazy = false,
     "simrat39/rust-tools.nvim",
     ft = "rust",
     dependencies = "neovim/nvim-lspconfig",
@@ -44,13 +51,13 @@ local plugins = {
       return require("rust-tools").setup(opts)
     end
   },
-  {
+  {lazy = false,
     "mfussenegger/nvim-dap",
     config = function (_, _)
       require("core.utils").load_mappings("dap")
     end
   },
-  {
+  {lazy = false,
     "mfussenegger/nvim-dap-python",
     ft = "python",
     dependencies = {
@@ -63,7 +70,7 @@ local plugins = {
       require("core.utils").load_mappings("dap_python")
     end,
   },
-  {
+  {lazy = false,
     "dreamsofcode-io/nvim-dap-go",
     ft = "go",
     dependencies = "mfussenegger/nvim-dap",
@@ -72,15 +79,14 @@ local plugins = {
       require("core.utils").load_mappings("dap_go")
     end
   },
-  {
+  {lazy = false,
     "mfussenegger/nvim-lint",
       config = function ()
         require "custom.configs.lint"
       end
   },
-  {
+  {lazy = false,
     "jay-babu/mason-nvim-dap.nvim",
-    event = "VeryLazy",
     dependencies = {
       "williamboman/mason.nvim",
       "mfussenegger/nvim-dap",
@@ -89,9 +95,8 @@ local plugins = {
       handlers = {},
     },
   },
-  {
+  {lazy = false,
     "rcarriga/nvim-dap-ui",
-    event = "VeryLazy",
     dependencies = "mfussenegger/nvim-dap",
     config = function ()
       local dap = require("dap")
@@ -108,27 +113,35 @@ local plugins = {
       end
     end
   },
-  {
+  {lazy = false,
     "mhartington/formatter.nvim",
-    event = "VeryLazy",
     opts = function ()
         return require "custom.configs.formatter"
     end
   },
-  {
+  {lazy = false,
     "dinhhuy258/git.nvim"
   },
-  {
+  {lazy = false,
     "jose-elias-alvarez/null-ls.nvim",
-    event = "VeryLazy",
     ft = {"python", "go"},
     opts = function()
       return require "custom.configs.null-ls"
     end,
   },
-  {
+ --[[{
+    "stevearc/overseer.nvim",
+    lazy=false,
+    opts = function ()
+        require "custom.configs.overseer"
+    end,
+  },]]--
+  {lazy = false,
+    dependencies={"nvim-lua/plenary.nvim", "stevearc/overseer.nvim"},
     "Civitasv/cmake-tools.nvim",
-    require "custom.configs.cmake-tools",
+    config = function ()
+        require "custom.configs.cmake-tools"
+    end
   },
  }
 
