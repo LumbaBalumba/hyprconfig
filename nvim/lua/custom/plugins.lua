@@ -136,13 +136,22 @@ local plugins = {
         require "custom.configs.overseer"
     end,
   },]]--
-  {lazy = false,
-    dependencies={"nvim-lua/plenary.nvim", "stevearc/overseer.nvim"},
+ {
     "Civitasv/cmake-tools.nvim",
+    lazy = false,
+    dependencies={"nvim-lua/plenary.nvim", "stevearc/overseer.nvim"},
     config = function ()
         require "custom.configs.cmake-tools"
     end
   },
+  {
+    "tpope/vim-dadbod",
+    lazy=false
+  },
+  {
+   "kristijanhusak/vim-dadbod-ui",
+    lazy=false
+  }
  }
 
 return plugins

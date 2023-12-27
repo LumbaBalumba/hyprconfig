@@ -75,4 +75,16 @@ M.cmake_tools = {
     }
 }
 
+M.move_lines = {
+    n = {
+        ["<A-Down>"] = {
+        "<cmd> m .+1 <CR>",
+        "Move line down"
+        },["<A-Up>"] = {
+        "<cmd> :m .-2 <CR>",
+        "Move line up"
+        },
+    }
+}
+
 return M
