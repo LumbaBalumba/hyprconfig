@@ -55,7 +55,8 @@ M.dap_go = {
 
 M.cmake_tools = {
   --plugin = true,
-  n = {["<leader>Cg"] = {
+  n = {
+    ["<leader>Cg"] = {
         "<cmd> CMakeGenerate <CR>",
         "Generate CMake environment"
     },
@@ -83,6 +84,15 @@ M.move_lines = {
         },["<A-Up>"] = {
         "<cmd> :m .-2 <CR>",
         "Move line up"
+        },
+    }
+}
+
+M.dadbod = {
+    n = {
+        ["<leader>DB"] = {
+            "<cmd> DBUIToggle <CR>",
+            "Toggle dadbod"
         },
     }
 }

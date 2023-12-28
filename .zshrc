@@ -92,7 +92,8 @@ source $ZSH/oh-my-zsh.sh
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
 # else
-#   export EDITOR='mvim'
+export EDITOR='nvim'
+export VISUAL='nvim'
 # fi
 
 # Compilation flags
@@ -120,3 +121,6 @@ command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
 alias setup-python="/usr/bin/python -m venv .venv ; source .venv/bin/activate"
+alias w3mimgdisplay="/usr/lib/w3m/w3mimgdisplay"
+
+export RANGER_LOAD_DEFAULT_RC="false"
