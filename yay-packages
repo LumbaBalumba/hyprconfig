@@ -1,3 +1,4 @@
+[1m[33m
 a52dec
 abseil-cpp
 accounts-qml-module
@@ -88,6 +89,7 @@ clucene
 cmake
 cmake-format
 colord
+compiledb
 compiler-rt
 composer
 containerd
@@ -951,6 +953,7 @@ python-annotated-types
 python-argcomplete
 python-attrs
 python-autocommand
+python-bashlex
 python-build
 python-cairo
 python-cairocffi
@@ -1011,6 +1014,7 @@ python-pywlroots
 python-requests
 python-setuptools
 python-shtab
+python-shutilwhich
 python-six
 python-termcolor
 python-toml
