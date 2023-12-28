@@ -1,3 +1,4 @@
+[1m[33m
 a52dec
 abseil-cpp
 accounts-qml-module
@@ -35,6 +36,7 @@ arm-none-eabi-gcc
 arm-none-eabi-newlib
 at-spi2-core
 atkmm
+atool
 attica5
 attr
 audit
@@ -142,6 +144,7 @@ edk2-ovmf
 efibootmgr
 efitools
 efivar
+efl
 egl-wayland
 eglexternalplatform
 elixir
@@ -312,6 +315,7 @@ iio-sensor-proxy
 ijs
 imagemagick
 imath
+imlib2
 imv
 inetutils
 iniparser
@@ -365,6 +369,7 @@ kimageannotator
 kirigami2
 kitemmodels5
 kitemviews5
+kitty
 kitty-shell-integration
 kitty-terminfo
 kjobwidgets5
@@ -537,6 +542,7 @@ libice
 libidn
 libidn2
 libiec61883
+libimagequant
 libimobiledevice
 libinih
 libinput
@@ -754,6 +760,7 @@ lsb-release
 lsof
 lsscsi
 lua
+lua52
 luajit
 luarocks
 luit
@@ -981,6 +988,7 @@ python-mypy_extensions
 python-ordered-set
 python-packaging
 python-parso
+python-pillow
 python-pip
 python-platformdirs
 python-pluggy
@@ -1161,6 +1169,7 @@ speex
 speexdsp
 spirv-tools
 sqlite
+squashfs-tools
 sratom
 srt
 startup-notification
@@ -1189,6 +1198,7 @@ tcl
 tdb
 telegram-desktop
 tepl
+terminology
 tevent
 texinfo
 thin-provisioning-tools
@@ -1239,7 +1249,6 @@ vid.stab
 vim
 vim-runtime
 virtiofsd
-visual-studio-code-bin
 vmaf
 volume_key
 volumectl

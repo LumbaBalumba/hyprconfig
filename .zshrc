@@ -121,6 +121,6 @@ command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
 alias setup-python="/usr/bin/python -m venv .venv ; source .venv/bin/activate"
-alias w3mimgdisplay="/usr/lib/w3m/w3mimgdisplay"
+alias icat="kitten icat"
 
-export RANGER_LOAD_DEFAULT_RC="false"
+export RANGER_LOAD_DEFAULT_RC=false
