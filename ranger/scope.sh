@@ -128,15 +128,15 @@ handle_image() {
     local mimetype="${1}"
     case "${mimetype}" in
         ## SVG
-        # image/svg+xml|image/svg)
-        #     convert -- "${FILE_PATH}" "${IMAGE_CACHE_PATH}" && exit 6
-        #     exit 1;;
+        image/svg+xml|image/svg)
+            convert -- "${FILE_PATH}" "${IMAGE_CACHE_PATH}" && exit 6
+            exit 1;;
 
-        ## DjVu
-        # image/vnd.djvu)
-        #     ddjvu -format=tiff -quality=90 -page=1 -size="${DEFAULT_SIZE}" \
-        #           - "${IMAGE_CACHE_PATH}" < "${FILE_PATH}" \
-        #           && exit 6 || exit 1;;
+        # DjVu
+        image/vnd.djvu)
+            ddjvu -format=tiff -quality=90 -page=1 -size="${DEFAULT_SIZE}" \
+                  - "${IMAGE_CACHE_PATH}" < "${FILE_PATH}" \
+                  && exit 6 || exit 1;;
 
         ## Image
         image/*)
@@ -154,10 +154,10 @@ handle_image() {
             exit 7;;
 
         ## Video
-        # video/*)
-        #     # Thumbnail
-        #     ffmpegthumbnailer -i "${FILE_PATH}" -o "${IMAGE_CACHE_PATH}" -s 0 && exit 6
-        #     exit 1;;
+        video/*)
+            # Thumbnail
+            ffmpegthumbnailer -i "${FILE_PATH}" -o "${IMAGE_CACHE_PATH}" -s 0 && exit 6
+            exit 1;;
 
         ## PDF
         application/pdf)

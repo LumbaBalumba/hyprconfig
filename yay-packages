@@ -1,4 +1,3 @@
-[1m[33m
 a52dec
 abseil-cpp
 accounts-qml-module
@@ -13,7 +12,6 @@ adobe-source-han-sans-kr-fonts
 adwaita-cursors
 adwaita-icon-theme
 aha
-alacritty
 alsa-card-profiles
 alsa-firmware
 alsa-lib
@@ -154,7 +152,6 @@ enchant
 endeavouros-keyring
 endeavouros-mirrorlist
 endeavouros-theming
-eos-apps-info
 eos-bash-shared
 eos-dracut
 eos-hooks
@@ -163,7 +160,6 @@ eos-packagelist
 eos-qogir-icons
 eos-quickstart
 eos-rankmirrors
-eos-sddm-theme
 eos-skel-ce-sway
 eos-translations
 eos-update-notifier
@@ -252,6 +248,7 @@ gpgme
 gpm
 gptfdisk
 graphene
+graphicsmagick
 graphite
 graphviz
 grep
@@ -298,7 +295,6 @@ help2man
 hicolor-icon-theme
 hidapi
 highway
-htop
 http-parser
 hunspell
 hwdata
@@ -339,7 +335,6 @@ jre-openjdk-headless
 json-c
 json-glib
 jsoncpp
-julia
 jxrlib
 karchive5
 kauth5
@@ -749,6 +744,7 @@ linux-headers
 lld
 lldb
 llvm
+llvm-julia-libs
 llvm-libs
 llvm15-libs
 lm_sensors
@@ -952,6 +948,7 @@ pv
 pyenv
 python
 python-annotated-types
+python-argcomplete
 python-attrs
 python-autocommand
 python-build
@@ -960,9 +957,12 @@ python-cairocffi
 python-capng
 python-cffi
 python-charset-normalizer
+python-click
 python-colorama
 python-cryptography
 python-defusedxml
+python-distro
+python-docopt
 python-docstring-to-markdown
 python-fastjsonschema
 python-future
@@ -990,6 +990,7 @@ python-packaging
 python-parso
 python-pillow
 python-pip
+python-pipx
 python-platformdirs
 python-pluggy
 python-ply
@@ -1019,6 +1020,7 @@ python-trove-classifiers
 python-typing_extensions
 python-ujson
 python-urllib3
+python-userpath
 python-validate-pyproject
 python-websockets
 python-wheel
@@ -1198,7 +1200,6 @@ tcl
 tdb
 telegram-desktop
 tepl
-terminology
 tevent
 texinfo
 thin-provisioning-tools
@@ -1232,6 +1233,7 @@ ttf-ubuntu-font-family
 tzdata
 uchardet
 udisks2
+ueberzug
 unibilium
 unrar
 unzip
@@ -1268,7 +1270,6 @@ webkit2gtk
 webkit2gtk-4.1
 webrtc-audio-processing
 webrtc-audio-processing-1
-welcome
 wget
 which
 wildmidi
@@ -1329,7 +1330,6 @@ xorg-xsetroot
 xorg-xwayland
 xorgproto
 xsettingsd
-xterm
 xvidcore
 xxhash
 xz
