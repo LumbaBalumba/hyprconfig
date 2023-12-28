@@ -124,3 +124,6 @@ alias setup-python="/usr/bin/python -m venv .venv ; source .venv/bin/activate"
 alias icat="kitten icat"
 
 export RANGER_LOAD_DEFAULT_RC=false
+
+# Created by `pipx` on 2023-12-28 10:18:06
+export PATH="$PATH:/home/i3alumba/.local/bin"
