@@ -26,7 +26,6 @@ aom
 appstream
 appstream-qt5
 arandr
-arc-gtk-theme-eos
 archlinux-keyring
 archlinux-xdg-menu
 argon2
@@ -118,7 +117,7 @@ dhclient
 diffuse
 diffutils
 ding-libs
-discord-screenaudio
+discord
 dkms
 dmidecode
 dmraid
@@ -151,27 +150,14 @@ elixir
 elixir-ls
 ell
 enchant
-endeavouros-keyring
-endeavouros-mirrorlist
-endeavouros-theming
-eos-bash-shared
 eos-dracut
 eos-hooks
-eos-log-tool
-eos-packagelist
-eos-qogir-icons
-eos-quickstart
-eos-rankmirrors
-eos-skel-ce-sway
-eos-translations
-eos-update-notifier
 erlang-nox
 eslint
 ethtool
 exfatprogs
 exiv2
 exo
-expac
 expat
 f2fs-tools
 faac
@@ -280,7 +266,6 @@ gtk3
 gtk4
 gtkd
 gtkmm3
-gtksourceview3
 gtksourceview4
 gts
 guile
@@ -812,7 +797,6 @@ ndctl
 neofetch
 neon
 neovim
-net-tools
 netctl
 netpbm
 nettle
@@ -842,7 +826,7 @@ nss-mdns
 ntfs-3g
 ntp
 numactl
-nvidia-dkms
+nvidia-open-dkms
 nvidia-utils
 nvm
 oath-toolkit
@@ -998,7 +982,6 @@ python-platformdirs
 python-pluggy
 python-ply
 python-psutil
-python-pyaml
 python-pycparser
 python-pydantic
 python-pydantic-core
@@ -1030,7 +1013,6 @@ python-websockets
 python-wheel
 python-xcffib
 python-xkbcommon
-python-yaml
 qca-qt5
 qemu-base
 qemu-common
@@ -1076,8 +1058,8 @@ rebar3
 rebuild-detector
 redland
 refind
+refind-theme-dracula
 reflector
-reflector-simple
 reiserfsprogs
 rhash
 rnnoise
@@ -1270,7 +1252,6 @@ wayland
 wayland-protocols
 wayland-utils
 webkit2gtk
-webkit2gtk-4.1
 webrtc-audio-processing
 webrtc-audio-processing-1
 wget
@@ -1305,7 +1286,6 @@ xdg-desktop-portal
 xdg-desktop-portal-wlr
 xdg-user-dirs
 xdg-utils
-xed
 xf86-input-libinput
 xfconf
 xfsprogs
@@ -1336,7 +1316,6 @@ xsettingsd
 xvidcore
 xxhash
 xz
-yad
 yarn
 yay
 zbar
