@@ -206,6 +206,7 @@ giflib
 git
 git-lfs
 glances
+glew
 glib-networking
 glib2
 glib2-docs
@@ -1131,6 +1132,7 @@ seatd
 sed
 semver
 serd
+sfml
 sg3_utils
 shaderc
 shadow
@@ -1160,6 +1162,7 @@ sqlite
 squashfs-tools
 sratom
 srt
+sshfs
 startup-notification
 stoken
 sudo
