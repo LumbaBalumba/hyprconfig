@@ -5,6 +5,7 @@ local capabilities = config.capabilities
 
 local lspconfig = require("lspconfig")
 local util = require "lspconfig.util"
+
 lspconfig.pyright.setup({
   on_attach = on_attach,
   capabilities = capabilities,

@@ -104,6 +104,8 @@ dav1d
 db
 db5.3
 dbus
+dbus-broker
+dbus-broker-units
 dbus-glib
 dbus-python
 dconf
@@ -150,8 +152,6 @@ elixir
 elixir-ls
 ell
 enchant
-eos-dracut
-eos-hooks
 erlang-nox
 eslint
 ethtool
@@ -243,7 +243,6 @@ graphviz
 grep
 grim
 groff
-grub
 gsettings-desktop-schemas
 gsfonts
 gsm
@@ -291,6 +290,7 @@ hwinfo
 hwloc
 hyphen
 hyprland
+hyprlang
 hyprpaper
 i2c-tools
 iana-etc
@@ -317,6 +317,7 @@ java-runtime-common
 jbig2dec
 jbigkit
 jemalloc
+jetbrains-toolbox
 jfsutils
 jq
 jre-openjdk-headless
@@ -626,6 +627,7 @@ libsecret
 libsigc++
 libsigc++-3.0
 libsigsegv
+libsixel
 libslirp
 libsm
 libsndfile
@@ -667,6 +669,7 @@ libvdpau
 libverto
 libvisio
 libvorbis
+libvpl
 libvpx
 libvterm
 libwacom
@@ -744,6 +747,7 @@ lsb-release
 lsof
 lsscsi
 lua
+lua-language-server
 lua52
 luajit
 luarocks
@@ -798,6 +802,7 @@ ndctl
 neofetch
 neon
 neovim
+net-tools
 netctl
 netpbm
 nettle
@@ -833,7 +838,8 @@ nvm
 oath-toolkit
 obs-studio
 ocl-icd
-onevpl
+oh-my-zsh-git
+oh-my-zsh-plugin-syntax-highlighting
 oniguruma
 openal
 openblas64
@@ -933,9 +939,11 @@ protobuf
 psmisc
 pv
 pyenv
+pyright
 python
 python-annotated-types
 python-argcomplete
+python-asgiref
 python-attrs
 python-autocommand
 python-bashlex
@@ -956,6 +964,8 @@ python-fastjsonschema
 python-future
 python-gobject
 python-greenlet
+python-h11
+python-httptools
 python-idna
 python-inflect
 python-iniconfig
@@ -996,6 +1006,7 @@ python-pytest
 python-pywayland
 python-pywlroots
 python-requests
+python-ruff
 python-setuptools
 python-shtab
 python-shutilwhich
@@ -1009,6 +1020,7 @@ python-typing_extensions
 python-ujson
 python-urllib3
 python-userpath
+python-uvloop
 python-validate-pyproject
 python-websockets
 python-wheel
@@ -1065,6 +1077,7 @@ reiserfsprogs
 rhash
 rnnoise
 rpcbind
+rpi-imager
 rsync
 rtkit
 rtmpdump
@@ -1199,6 +1212,7 @@ thunar-volman
 tk
 tldr
 tmate
+tomlplusplus
 tpm2-tss
 tracker3
 transmission-qt
@@ -1233,12 +1247,14 @@ util-linux
 util-linux-libs
 v4l-utils
 vala
+vapoursynth
 vde2
 vi
 vid.stab
 vim
 vim-runtime
 virtiofsd
+visual-studio-code-bin
 vmaf
 volume_key
 volumectl
@@ -1329,6 +1345,7 @@ zip
 zix
 zlib
 zoom
+zram-generator
 zsh
 zstd
 zvbi

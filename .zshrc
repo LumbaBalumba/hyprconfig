@@ -110,7 +110,7 @@ export VISUAL='nvim'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-alias vim=nvim
+alias vim="source .venv/bin/activate &> /dev/null ; nvim"
 
 #eval "$(starship init zsh)"
 #
@@ -127,3 +127,5 @@ export RANGER_LOAD_DEFAULT_RC=false
 
 # Created by `pipx` on 2023-12-28 10:18:06
 export PATH="$PATH:/home/i3alumba/.local/bin"
+
+alias :q="exit"

@@ -54,7 +54,6 @@ M.dap_go = {
 
 
 M.cmake_tools = {
-  --plugin = true,
   n = {
     ["<leader>Cg"] = {
         "<cmd> CMakeGenerate <CR>",
@@ -71,7 +70,12 @@ M.cmake_tools = {
     ["<leader>Cd"] = {
         "<cmd> CMakeDebug <CR>",
         "Debug CMake project"
+    },
+    ["<leader>Cs"] = {
+        "<cmd> CMakeSelectBuildTarget <CR>",
+        "Select CMake target"
     }
+
 
     }
 }
@@ -96,5 +100,6 @@ M.dadbod = {
         },
     }
 }
+
 
 return M
