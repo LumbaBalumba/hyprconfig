@@ -17,10 +17,8 @@ local plugins = {
           "eslint-lsp",
           "prettier",
           "gopls",
-          "cmake-language-server",
-          "cmakelang",
-          "cmakelint",
-          "neocmakelsp"
+          "neocmakelsp",
+          "cmakelint"
         },
     },
   },

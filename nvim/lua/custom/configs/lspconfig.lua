@@ -60,3 +60,12 @@ lspconfig.gopls.setup {
     }
 
 }
+
+lspconfig.neocmake.setup {
+    on_attach = on_attach,
+    capabilities = capabilities,
+    cmd = {"neocmakelsp", "--stdio"},
+    filetypes = {"cmake", "txt"},
+    --root_dir = root_pattern('.git', 'cmake'),
+    single_file_support=true
+}
