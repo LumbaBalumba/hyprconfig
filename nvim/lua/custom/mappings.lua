@@ -101,5 +101,13 @@ M.dadbod = {
     }
 }
 
+M.python = {
+    n = {
+        ["<leader>Pr"] = {
+            "<cmd> PyrightSetPythonPath .venv/bin/python <CR>",
+            "Set pyright Python path"
+        }
+    }
+}
 
 return M
