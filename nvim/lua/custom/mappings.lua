@@ -92,6 +92,28 @@ M.move_lines = {
     }
 }
 
+
+-- M.windows = {
+--     n = {
+--         ["<C-w><Up>"] = {
+--             "<C-w>k",
+--             "Window up"
+--         },
+--         ["<C-w><Down>"] = {
+--             "<C-w>j",
+--             "Window down"
+--         },
+--         ["<C-w><Left>"] = {
+--             "<C-w>h",
+--             "Window left"
+--         },
+--         ["<C-w><Right"] = {
+--             "<C-w>l",
+--             "Window right"
+--         }
+--     }
+-- }
+
 M.dadbod = {
     n = {
         ["<leader>DB"] = {
