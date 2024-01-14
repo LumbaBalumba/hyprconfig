@@ -1,3 +1,4 @@
+[1m[33m
 a52dec
 abseil-cpp
 accounts-qml-module
@@ -956,6 +957,7 @@ popt
 portaudio
 postgresql
 postgresql-libs
+postman-bin
 potrace
 power-profiles-daemon
 ppp
