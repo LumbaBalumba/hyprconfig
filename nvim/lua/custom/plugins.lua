@@ -6,7 +6,7 @@ local plugins = {
         ensure_installed = {
           "pyright",
           "ruff",
-          --"mypy",
+          "mypy",
           "black",
           "debugpy",
           "rust-analyzer",

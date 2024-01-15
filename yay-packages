@@ -153,8 +153,6 @@ elixir
 elixir-ls
 ell
 enchant
-eos-dracut
-eos-hooks
 erlang-nox
 eslint
 ethtool
@@ -1111,6 +1109,7 @@ reiserfsprogs
 rhash
 rnnoise
 rpcbind
+rpi-imager
 rsync
 rtkit
 rtmpdump
@@ -1287,6 +1286,7 @@ vid.stab
 vim
 vim-runtime
 virtiofsd
+visual-studio-code-bin
 vmaf
 volume_key
 volumectl
