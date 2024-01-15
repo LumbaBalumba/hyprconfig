@@ -138,6 +138,7 @@ dracut
 dtc
 duf
 duktape
+dump_syms
 e2fsprogs
 ebook-tools
 editorconfig-core-c
@@ -152,6 +153,8 @@ elixir
 elixir-ls
 ell
 enchant
+eos-dracut
+eos-hooks
 erlang-nox
 eslint
 ethtool
@@ -174,6 +177,7 @@ file-roller
 filesystem
 findutils
 firefox
+firefox-developer-edition
 firewalld
 flac
 flex
@@ -299,6 +303,7 @@ icu
 iio-sensor-proxy
 ijs
 imagemagick
+imake
 imath
 imlib2
 imv
@@ -774,6 +779,7 @@ md4c
 mdadm
 media-player-info
 meld
+mercurial
 mesa
 mesa-utils
 meson
@@ -1105,7 +1111,6 @@ reiserfsprogs
 rhash
 rnnoise
 rpcbind
-rpi-imager
 rsync
 rtkit
 rtmpdump
@@ -1282,7 +1287,6 @@ vid.stab
 vim
 vim-runtime
 virtiofsd
-visual-studio-code-bin
 vmaf
 volume_key
 volumectl
@@ -1294,6 +1298,10 @@ vulkan-icd-loader
 vulkan-tools
 vulkan-validation-layers
 w3m
+wasi-compiler-rt
+wasi-libc
+wasi-libc++
+wasi-libc++abi
 waybar
 wayland
 wayland-protocols
@@ -1342,6 +1350,7 @@ xmlsec
 xorg-fonts-encodings
 xorg-server
 xorg-server-common
+xorg-server-xvfb
 xorg-setxkbmap
 xorg-xauth
 xorg-xdpyinfo
@@ -1364,6 +1373,7 @@ xvidcore
 xxhash
 xz
 yarn
+yasm
 yay
 zbar
 zenity
