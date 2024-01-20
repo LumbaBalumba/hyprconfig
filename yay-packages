@@ -153,6 +153,8 @@ elixir
 elixir-ls
 ell
 enchant
+eos-dracut
+eos-hooks
 erlang-nox
 eslint
 ethtool
