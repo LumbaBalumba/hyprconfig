@@ -149,13 +149,10 @@ efivar
 efl
 egl-wayland
 eglexternalplatform
-elfutils
 elixir
 elixir-ls
 ell
 enchant
-eos-dracut
-eos-hooks
 erlang-nox
 eslint
 ethtool
@@ -235,6 +232,7 @@ gofumpt
 goimports-reviser
 golines
 google-chrome
+google-java-format
 gotop
 gperf
 gperftools
@@ -323,10 +321,10 @@ java-environment-common
 java-runtime-common
 jbig2dec
 jbigkit
+jdk-openjdk
 jemalloc
 jfsutils
 jq
-jre-openjdk-headless
 json-c
 json-glib
 jsoncpp
@@ -372,7 +370,6 @@ kquickcharts5
 krb5
 kservice5
 ktextwidgets5
-kubectl
 kunitconversion5
 kuserfeedback5
 kwallet5
@@ -890,7 +887,6 @@ pciutils
 pcre
 pcre2
 pcsclite
-perf
 perl
 perl-class-method-modifiers
 perl-clone
@@ -1328,6 +1324,7 @@ vid.stab
 vim
 vim-runtime
 virtiofsd
+visual-studio-code-bin
 vmaf
 volume_key
 volumectl

@@ -149,7 +149,7 @@ local plugins = {
   {
    "kristijanhusak/vim-dadbod-ui",
     lazy=false
-  }
+  },
  }
 
 return plugins

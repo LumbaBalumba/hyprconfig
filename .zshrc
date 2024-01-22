@@ -110,7 +110,7 @@ export VISUAL='nvim'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-alias vim="source .venv/bin/activate &> /dev/null ; nvim; deactivate"
+alias vim="source .venv/bin/activate &> /dev/null ; nvim"
 
 #eval "$(starship init zsh)"
 #

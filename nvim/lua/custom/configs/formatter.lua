@@ -1,3 +1,4 @@
+local home = os.getenv("HOME")
 local M = {
   filetype = {
     javascript = {
