@@ -149,10 +149,13 @@ efivar
 efl
 egl-wayland
 eglexternalplatform
+elfutils
 elixir
 elixir-ls
 ell
 enchant
+eos-dracut
+eos-hooks
 erlang-nox
 eslint
 ethtool
@@ -369,6 +372,7 @@ kquickcharts5
 krb5
 kservice5
 ktextwidgets5
+kubectl
 kunitconversion5
 kuserfeedback5
 kwallet5
@@ -886,6 +890,7 @@ pciutils
 pcre
 pcre2
 pcsclite
+perf
 perl
 perl-class-method-modifiers
 perl-clone
@@ -1323,7 +1328,6 @@ vid.stab
 vim
 vim-runtime
 virtiofsd
-visual-studio-code-bin
 vmaf
 volume_key
 volumectl
