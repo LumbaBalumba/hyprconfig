@@ -66,6 +66,7 @@ brotli
 btop
 btrfs-progs
 bubblewrap
+bumblebee
 bzip2
 c-ares
 ca-certificates
@@ -77,6 +78,7 @@ cantarell-fonts
 capstone
 cargo-audit
 cbindgen
+ccache
 cdparanoia
 cfitsio
 chromaprint
@@ -132,6 +134,7 @@ docker-compose
 dosfstools
 double-conversion
 downgrade
+dracula-grub-theme-git
 dracula-gtk-theme
 dracula-icons-git
 dracut
@@ -286,6 +289,7 @@ help2man
 hicolor-icon-theme
 hidapi
 highway
+hiredis
 http-parser
 hunspell
 hwdata
@@ -394,6 +398,7 @@ lib32-e2fsprogs
 lib32-expat
 lib32-gcc-libs
 lib32-glibc
+lib32-glu
 lib32-icu
 lib32-keyutils
 lib32-krb5
@@ -403,6 +408,7 @@ lib32-libffi
 lib32-libglvnd
 lib32-libgpg-error
 lib32-libidn2
+lib32-libjpeg-turbo
 lib32-libldap
 lib32-libpciaccess
 lib32-libpsl
@@ -422,6 +428,7 @@ lib32-libxfixes
 lib32-libxml2
 lib32-libxshmfence
 lib32-libxss
+lib32-libxv
 lib32-libxxf86vm
 lib32-llvm-libs
 lib32-lm_sensors
@@ -429,9 +436,13 @@ lib32-mesa
 lib32-ncurses
 lib32-nspr
 lib32-nss
+lib32-nvidia-utils
+lib32-ocl-icd
+lib32-opencl-nvidia
 lib32-openssl
 lib32-p11-kit
 lib32-sqlite
+lib32-virtualgl
 lib32-vulkan-icd-loader
 lib32-wayland
 lib32-xz
@@ -473,6 +484,7 @@ libcdr
 libcloudproviders
 libcmis
 libcolord
+libconfig
 libcups
 libdaemon
 libdatrie
@@ -716,6 +728,7 @@ libxklavier
 libxml2
 libxmlb
 libxmu
+libxnvctrl
 libxpm
 libxpresent
 libxrandr
@@ -727,6 +740,7 @@ libxss
 libxt
 libxtst
 libxv
+libxvmc
 libxxf86vm
 libyaml
 libyuv
@@ -840,6 +854,7 @@ nss
 nss-mdns
 ntfs-3g
 ntp
+nuitka
 numactl
 nvidia-dkms
 nvidia-utils
@@ -852,13 +867,16 @@ oh-my-zsh-plugin-syntax-highlighting
 oniguruma
 openal
 openblas64
+opencl-nvidia
 openconnect
 opencore-amr
 openexr
+openjade
 openjpeg2
 openlibm
 openmpi
 openpmix
+opensp
 openssh
 openssl
 openssl-1.1
@@ -882,6 +900,7 @@ parallel
 parted
 pass
 patch
+patchelf
 pavucontrol
 pciutils
 pcre
@@ -969,6 +988,7 @@ postman-bin
 potrace
 power-profiles-daemon
 ppp
+primus
 prison5
 procps-ng
 protobuf
@@ -978,6 +998,7 @@ pyenv
 pyright
 python
 python-annotated-types
+python-appdirs
 python-argcomplete
 python-asgiref
 python-attrs
@@ -997,11 +1018,13 @@ python-colorama
 python-crashtest
 python-cryptography
 python-defusedxml
+python-dictobject
 python-distlib
 python-distro
 python-docopt
 python-docstring-to-markdown
 python-dulwich
+python-execnet
 python-fastjsonschema
 python-filelock
 python-future
@@ -1028,6 +1051,7 @@ python-lark-parser
 python-lockfile
 python-lsp-jsonrpc
 python-lsp-server
+python-luckydonald-utils
 python-lxml
 python-mako
 python-markdown
@@ -1062,6 +1086,7 @@ python-pyqt5
 python-pyqt5-sip
 python-pyrsistent
 python-pytest
+python-pytest-xdist
 python-pywayland
 python-pywlroots
 python-rapidfuzz
@@ -1085,6 +1110,7 @@ python-trove-classifiers
 python-typing_extensions
 python-ujson
 python-urllib3
+python-urwid
 python-userpath
 python-uvloop
 python-validate-pyproject
@@ -1207,6 +1233,7 @@ rustup
 s-nail
 sbc
 scdoc
+scons
 sddm
 sdl2
 seabios
@@ -1216,6 +1243,7 @@ semver
 serd
 sfml
 sg3_utils
+sgml-common
 shaderc
 shadow
 shared-mime-info
@@ -1324,6 +1352,7 @@ vid.stab
 vim
 vim-runtime
 virtiofsd
+virtualgl
 visual-studio-code-bin
 vmaf
 volume_key
@@ -1380,10 +1409,12 @@ xdg-desktop-portal-wlr
 xdg-user-dirs
 xdg-utils
 xf86-input-libinput
+xf86-video-intel
 xfconf
 xfsprogs
 xkeyboard-config
 xl2tpd
+xmldiff
 xmlsec
 xorg-fonts-encodings
 xorg-server
