@@ -1,3 +1,4 @@
+[1m[33m
 a52dec
 aalib
 abseil-cpp
@@ -153,14 +154,11 @@ efivar
 efl
 egl-wayland
 eglexternalplatform
-elfutils
 elixir
 elixir-ls
 ell
 enca
 enchant
-eos-dracut
-eos-hooks
 erlang-nox
 eslint
 ethtool
@@ -379,7 +377,6 @@ kquickcharts5
 krb5
 kservice5
 ktextwidgets5
-kubectl
 kunitconversion5
 kuserfeedback5
 kwallet5
@@ -779,7 +776,6 @@ lsb-release
 lsof
 lsscsi
 lua
-lua-format
 lua-language-server
 lua52
 luajit
@@ -801,7 +797,6 @@ man-pages
 mauikit
 mauikit-accounts
 mauiman
-maven
 mbedtls
 mbedtls2
 md4c
@@ -919,7 +914,6 @@ pciutils
 pcre
 pcre2
 pcsclite
-perf
 perl
 perl-class-method-modifiers
 perl-clone
