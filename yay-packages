@@ -1,5 +1,6 @@
 [1m[33m
 a52dec
+aalib
 abseil-cpp
 accounts-qml-module
 accountsservice
@@ -93,6 +94,7 @@ colord
 compiledb
 compiler-rt
 composer
+confuse
 containerd
 convertlit
 coreutils
@@ -155,6 +157,7 @@ eglexternalplatform
 elixir
 elixir-ls
 ell
+enca
 enchant
 erlang-nox
 eslint
@@ -473,6 +476,7 @@ libbpf
 libbs2b
 libbsd
 libbytesize
+libcaca
 libcamera
 libcamera-ipa
 libcanberra
@@ -521,6 +525,7 @@ libffi
 libfontenc
 libfreeaptx
 libfreehand
+libftdi
 libgcrypt
 libgedit-amtk
 libgedit-gtksourceview
@@ -565,6 +570,7 @@ liblqr
 liblrdf
 libltc
 libluv
+libmad
 libmanette
 libmaxminddb
 libmbim
@@ -677,6 +683,7 @@ libunwind
 liburcu
 liburing
 libusb
+libusb-compat
 libusbmuxd
 libutempter
 libutf8proc
@@ -753,6 +760,7 @@ linux-api-headers
 linux-firmware
 linux-firmware-whence
 linux-headers
+lirc
 lld
 lldb
 llvm
@@ -1164,6 +1172,7 @@ re2
 readline
 rebar3
 rebuild-detector
+recode
 redland
 refind
 refind-theme-dracula
