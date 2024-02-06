@@ -7,41 +7,34 @@ local lspconfig = require("lspconfig")
 local util = require "lspconfig.util"
 
 lspconfig.pyright.setup({
-  on_attach = on_attach,
-  capabilities = capabilities,
-  filetypes = {"python"},
+    on_attach = on_attach,
+    capabilities = capabilities,
+    filetypes = {"python"}
 })
 
 lspconfig.clangd.setup({
-  on_attach = function (client, bufnr)
-    client.server_capabilities.signatureProvider = false
-    on_attach(client, bufnr)
-  end,
-  capabilities = capabilities,
-  cmd = {"clangd", "--offset-encoding=utf-16"}
+    on_attach = function(client, bufnr)
+        client.server_capabilities.signatureProvider = false
+        on_attach(client, bufnr)
+    end,
+    capabilities = capabilities,
+    cmd = {"clangd", "--offset-encoding=utf-16"}
 })
 
 local function organize_imports()
-  local params = {
-    command = "_typescript.organizeImports",
-    arguments = {vim.api.nvim_buf_get_name(0)},
-  }
-  vim.lsp.buf.execute_command(params)
+    local params = {
+        command = "_typescript.organizeImports",
+        arguments = {vim.api.nvim_buf_get_name(0)}
+    }
+    vim.lsp.buf.execute_command(params)
 end
 
 lspconfig.tsserver.setup({
     on_attach = on_attach,
     capabilities = capabilities,
-    init_options = {
-      preferences = {
-        disableSuggestions = true,
-      }
-    },
+    init_options = {preferences = {disableSuggestions = true}},
     commands = {
-      OrganizeImports = {
-        organize_imports,
-        description = "Organize Imports",
-      }
+        OrganizeImports = {organize_imports, description = "Organize Imports"}
     }
 })
 
@@ -49,14 +42,12 @@ lspconfig.gopls.setup {
     on_attach = on_attach,
     capabilities = capabilities,
     cmd = {"gopls"},
-    filetypes = { "go" , "gomod", "gowork", "gotmpl" },
+    filetypes = {"go", "gomod", "gowork", "gotmpl"},
     root_dir = util.root_pattern("go.work", "go.mod", ".git"),
     settings = {
         completeUnimported = true,
         usePlaceholders = true,
-        analyses = {
-            unusedparams = true,
-        }
+        analyses = {unusedparams = true}
     }
 
 }
@@ -66,6 +57,13 @@ lspconfig.neocmake.setup {
     capabilities = capabilities,
     cmd = {"neocmakelsp", "--stdio"},
     filetypes = {"cmake", "txt"},
-    --root_dir = root_pattern('.git', 'cmake'),
-    single_file_support=true
+    -- root_dir = root_pattern('.git', 'cmake'),
+    single_file_support = true
 }
+
+-- lspconfig.asm_lsp.setup {
+--     on_attach = on_attach,
+--     capabilities = capabilities,
+--     command = "asm-lsp",
+--     filetypes = {"asm", "s", "S"}
+-- }

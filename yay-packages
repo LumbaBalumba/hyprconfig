@@ -33,6 +33,7 @@ argon2
 arm-none-eabi-binutils
 arm-none-eabi-gcc
 arm-none-eabi-newlib
+asm-lsp
 at-spi2-core
 atkmm
 atool
@@ -40,11 +41,13 @@ attica5
 attr
 audit
 autoconf
+autoconf-archive
 autogen
 automake
 avahi
 awesome-terminal-fonts
 b43-fwcutter
+balena-etcher
 base
 base-devel
 bash
@@ -75,6 +78,7 @@ ca-certificates-mozilla
 ca-certificates-utils
 cairo
 cairomm
+cairomm-1.16
 cantarell-fonts
 capstone
 cargo-audit
@@ -138,7 +142,7 @@ double-conversion
 downgrade
 dracula-grub-theme-git
 dracula-gtk-theme
-dracula-icons-git
+dracula-icons-theme
 dracut
 dtc
 duf
@@ -154,6 +158,10 @@ efivar
 efl
 egl-wayland
 eglexternalplatform
+electron
+electron22
+electron25
+electron28
 elixir
 elixir-ls
 ell
@@ -225,6 +233,7 @@ glslang
 glu
 gmp
 gn
+gnome-common
 gnome-desktop
 gnome-desktop-4
 gnome-desktop-common
@@ -275,6 +284,7 @@ gtk2
 gtk3
 gtk4
 gtkd
+gtkmm-4.0
 gtkmm3
 gtksourceview4
 gts
@@ -316,11 +326,13 @@ imv
 inetutils
 iniparser
 intel-ucode
+intltool
 inxi
 iproute2
 iptables-nft
 iputils
 iso-codes
+itstool
 iwd
 jansson
 jasper
@@ -413,6 +425,8 @@ lib32-libgpg-error
 lib32-libidn2
 lib32-libjpeg-turbo
 lib32-libldap
+lib32-libnghttp2
+lib32-libnghttp3
 lib32-libpciaccess
 lib32-libpsl
 lib32-libssh2
@@ -491,6 +505,7 @@ libcolord
 libconfig
 libcups
 libdaemon
+libdatachannel
 libdatrie
 libdbusmenu-glib
 libdbusmenu-gtk3
@@ -555,6 +570,7 @@ libinstpatch
 libisl
 libixion
 libjpeg-turbo
+libjuice
 libjxl
 libkate
 libkdcraw5
@@ -754,6 +770,7 @@ libyuv
 libzip
 libzmf
 licenses
+lightdm
 lilv
 linux
 linux-api-headers
@@ -792,6 +809,7 @@ m4
 mailcap
 make
 mako
+mallard-ducktype
 man-db
 man-pages
 mauikit
@@ -904,6 +922,7 @@ pambase
 pamixer
 pango
 pangomm
+pangomm-2.48
 parallel
 parted
 pass
@@ -965,6 +984,7 @@ perl-uri
 perl-www-robotrules
 perl-xml-parser
 perl-xml-writer
+pgmodeler
 phonon-qt5
 phonon-qt5-gstreamer
 php
@@ -1000,6 +1020,7 @@ primus
 prison5
 procps-ng
 protobuf
+prrte
 psmisc
 pv
 pyenv
@@ -1322,7 +1343,7 @@ tmate
 tomlplusplus
 tpm2-tss
 tracker3
-transmission-qt
+transmission-gtk
 tree
 tree-sitter
 tslib
@@ -1453,6 +1474,8 @@ xz
 yarn
 yasm
 yay
+yelp-tools
+yelp-xsl
 zbar
 zenity
 zeromq
