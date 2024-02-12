@@ -13,8 +13,8 @@ require("cmake-tools").setup {
     cmake_compile_commands_from_lsp = false, -- this will automatically set compile commands file location using lsp, to use it, please set `cmake_soft_link_compile_commands` to false
     cmake_kits_path = nil, -- this is used to specify global cmake kits path, see CMakeKits for detailed usage
     cmake_variants_message = {
-        short = {show = true}, -- whether to show short message
-        long = {show = true, max_length = 40} -- whether to show long message
+        short = {show = false}, -- whether to show short message
+        long = {show = false, max_length = 40} -- whether to show long message
     },
     cmake_dap_configuration = { -- debug settings for cmake
         name = "cpp",
@@ -29,7 +29,7 @@ require("cmake-tools").setup {
         opts = {}, -- the options the executor will get, possible values depend on the executor type. See `default_opts` for possible values.
         default_opts = { -- a list of default and possible values for executors
             quickfix = {
-                show = "always", -- "always", "only_on_error"
+                show = "only_on_error", -- "always", "only_on_error"
                 position = "belowright", -- "vertical", "horizontal", "leftabove", "aboveleft", "rightbelow", "belowright", "topleft", "botright", use `:h vertical` for example to see help on them
                 size = 10,
                 encoding = "utf-8", -- if encoding is not "utf-8", it will be converted to "utf-8" using `vim.fn.iconv`
@@ -45,10 +45,10 @@ require("cmake-tools").setup {
                     }
                 }, -- options to pass into the `overseer.new_task` command
                 on_new_task = function(task)
-                    require("overseer").open({
-                        enter = false,
-                        direction = "right"
-                    })
+                    -- require("overseer").open({
+                    --     enter = false,
+                    --     direction = "right"
+                    -- })
                 end -- a function that gets overseer.Task when it is created, before calling `task:start`
             },
             terminal = {
@@ -74,7 +74,7 @@ require("cmake-tools").setup {
         opts = {}, -- the options the runner will get, possible values depend on the runner type. See `default_opts` for possible values.
         default_opts = { -- a list of default and possible values for runners
             quickfix = {
-                show = "always", -- "always", "only_on_error"
+                show = "only_on_error", -- "always", "only_on_error"
                 position = "belowright", -- "bottom", "top"
                 size = 10,
                 encoding = "utf-8",

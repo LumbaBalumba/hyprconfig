@@ -984,7 +984,6 @@ perl-uri
 perl-www-robotrules
 perl-xml-parser
 perl-xml-writer
-pgmodeler
 phonon-qt5
 phonon-qt5-gstreamer
 php
@@ -1050,6 +1049,7 @@ python-defusedxml
 python-dictobject
 python-distlib
 python-distro
+python-django
 python-docopt
 python-docstring-to-markdown
 python-dulwich
@@ -1116,6 +1116,7 @@ python-pyqt5-sip
 python-pyrsistent
 python-pytest
 python-pytest-xdist
+python-pytz
 python-pywayland
 python-pywlroots
 python-rapidfuzz
@@ -1130,6 +1131,7 @@ python-shellingham
 python-shtab
 python-shutilwhich
 python-six
+python-sqlparse
 python-termcolor
 python-toml
 python-tomli
@@ -1202,7 +1204,6 @@ reiserfsprogs
 rhash
 rnnoise
 rpcbind
-rpi-imager
 rsync
 rtkit
 rtmpdump
@@ -1264,7 +1265,6 @@ s-nail
 sbc
 scdoc
 scons
-sddm
 sdl2
 seabios
 seatd
@@ -1384,6 +1384,7 @@ vim-runtime
 virtiofsd
 virtualgl
 visual-studio-code-bin
+visual-studio-code-bin-debug
 vmaf
 volume_key
 volumectl

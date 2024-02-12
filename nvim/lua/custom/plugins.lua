@@ -94,25 +94,12 @@ local plugins = {
         "jose-elias-alvarez/null-ls.nvim",
         ft = {"python", "go"},
         opts = function() return require "custom.configs.null-ls" end
-    }, --[[{
-    "stevearc/overseer.nvim",
-    lazy=false,
-    opts = function ()
-        require "custom.configs.overseer"
-    end,
-  },]] --
-    {
+    }, {
         "Civitasv/cmake-tools.nvim",
         lazy = false,
         dependencies = {"nvim-lua/plenary.nvim", "stevearc/overseer.nvim"},
         config = function() require "custom.configs.cmake-tools" end
-    }, {"tpope/vim-dadbod", lazy = false},
-    {"kristijanhusak/vim-dadbod-ui", lazy = false}, {
-        "edluffy/hologram.nvim",
-        lazy = false,
-        config = function() require "custom.configs.hologram" end
-    }
-
+    }, {"tpope/vim-dadbod", lazy = false}
 }
 
 return plugins
