@@ -33,7 +33,7 @@ argon2
 arm-none-eabi-binutils
 arm-none-eabi-gcc
 arm-none-eabi-newlib
-asciidoc
+asm-lsp
 at-spi2-core
 atkmm
 atool
@@ -47,6 +47,7 @@ automake
 avahi
 awesome-terminal-fonts
 b43-fwcutter
+balena-etcher
 base
 base-devel
 bash
@@ -143,7 +144,6 @@ dracula-grub-theme-git
 dracula-gtk-theme
 dracula-icons-theme
 dracut
-drun
 dtc
 duf
 duktape
@@ -179,7 +179,6 @@ faac
 faad2
 fakeroot
 fcft
-feh
 ffcall
 ffmpeg
 ffmpegthumbnailer
@@ -238,7 +237,6 @@ gnome-desktop
 gnome-desktop-4
 gnome-desktop-common
 gnome-settings-daemon
-gnu-free-fonts
 gnupg
 gnutls
 go
@@ -246,9 +244,7 @@ gobject-introspection
 gobject-introspection-runtime
 gofumpt
 goimports-reviser
-goimports-reviser-debug
 golines
-golines-debug
 google-chrome
 google-java-format
 gotop
@@ -297,7 +293,6 @@ gupnp
 gupnp-igd
 gzip
 haguichi
-haguichi-debug
 harfbuzz
 harfbuzz-icu
 haveged
@@ -318,11 +313,6 @@ hyprland
 hyprlang
 hyprpaper
 i2c-tools
-i3-gaps-rounded-git
-i3-gaps-rounded-git-debug
-i3blocks
-i3lock
-i3status
 iana-etc
 icu
 iio-sensor-proxy
@@ -490,11 +480,18 @@ libavc1394
 libavif
 libavtp
 libax25
-libax25-debug
 libb2
 libb64
 libblastrampoline
 libblockdev
+libblockdev-crypto
+libblockdev-fs
+libblockdev-loop
+libblockdev-mdraid
+libblockdev-nvme
+libblockdev-part
+libblockdev-swap
+libblockdev-utils
 libbluray
 libbpf
 libbs2b
@@ -541,7 +538,6 @@ libelf
 libepoxy
 libepubgen
 libetonyek
-libev
 libevdev
 libevent
 libexif
@@ -718,7 +714,6 @@ libutf8proc
 libuv
 libva
 libva-nvidia-driver-git
-libva-nvidia-driver-git-debug
 libvdpau
 libverto
 libvisio
@@ -814,7 +809,6 @@ luit
 lv2
 lvm2
 lxappearance
-lxrandr
 ly
 lynx
 lz4
@@ -903,6 +897,7 @@ oath-toolkit
 obs-studio
 ocl-icd
 oh-my-zsh-git
+oh-my-zsh-plugin-syntax-highlighting
 oniguruma
 openal
 openblas64
@@ -919,6 +914,7 @@ opensp
 openssh
 openssl
 openssl-1.1
+openucx
 openvpn
 opus
 orc
@@ -1001,9 +997,7 @@ phonon-qt5
 phonon-qt5-gstreamer
 php
 pico-sdk
-picom
 picotool
-picotool-debug
 pinentry
 pipewire
 pipewire-alsa
@@ -1219,23 +1213,18 @@ reflector
 reiserfsprogs
 rhash
 rnnoise
-rofi
 rpcbind
-rpi-imager
 rsync
 rtkit
 rtmpdump
 rubberband
 ruby
 ruby-abbrev
-ruby-atk
 ruby-base64
 ruby-benchmark
 ruby-bigdecimal
 ruby-bundledgems
 ruby-bundler
-ruby-cairo
-ruby-cairo-gobject
 ruby-cgi
 ruby-csv
 ruby-date
@@ -1251,12 +1240,7 @@ ruby-fiddle
 ruby-fileutils
 ruby-find
 ruby-forwardable
-ruby-gdk_pixbuf2
 ruby-getoptlong
-ruby-gio2
-ruby-glib2
-ruby-gobject-introspection
-ruby-gtk2
 ruby-io-console
 ruby-io-nonblock
 ruby-io-wait
@@ -1266,17 +1250,13 @@ ruby-json
 ruby-logger
 ruby-minitest
 ruby-mutex_m
-ruby-native-package-installer
 ruby-net-http
 ruby-open-uri
-ruby-pango
-ruby-pkg-config
 ruby-power_assert
 ruby-psych
 ruby-racc
 ruby-rake
 ruby-rdoc
-ruby-red-colors
 ruby-reline
 ruby-rexml
 ruby-ruby2_keywords
@@ -1295,7 +1275,6 @@ s-nail
 sbc
 scdoc
 scons
-sddm
 sdl2
 seabios
 seatd
@@ -1375,7 +1354,6 @@ tomlplusplus
 tpm2-tss
 tracker3
 transmission-gtk
-transmission-qt
 tree
 tree-sitter
 tslib
@@ -1420,7 +1398,6 @@ visual-studio-code-bin-debug
 vmaf
 volume_key
 volumectl
-volumectl-debug
 vpnc
 vte-common
 vte3
@@ -1446,7 +1423,6 @@ wildmidi
 wireplumber
 wl-clipboard
 wlogout
-wlogout-debug
 wlroots
 wlroots0.16
 woff2
@@ -1481,7 +1457,6 @@ xkeyboard-config
 xl2tpd
 xmldiff
 xmlsec
-xmlto
 xorg-fonts-encodings
 xorg-server
 xorg-server-common
@@ -1507,7 +1482,6 @@ xsettingsd
 xvidcore
 xxhash
 xz
-yajl
 yarn
 yasm
 yay
