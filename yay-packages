@@ -388,6 +388,7 @@ kquickcharts5
 krb5
 kservice5
 ktextwidgets5
+kubectl
 kunitconversion5
 kuserfeedback5
 kwallet5
@@ -1423,6 +1424,7 @@ wildmidi
 wireplumber
 wl-clipboard
 wlogout
+wlogout-debug
 wlroots
 wlroots0.16
 woff2
