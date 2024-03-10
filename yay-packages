@@ -126,7 +126,6 @@ dhclient
 diffuse
 diffutils
 ding-libs
-discord
 dkms
 dmidecode
 dmraid
@@ -137,6 +136,7 @@ docbook-xsl
 docker
 docker-compose
 dosfstools
+dotconf
 double-conversion
 downgrade
 dracula-grub-theme-git
@@ -161,6 +161,7 @@ electron
 electron22
 electron25
 electron28
+electron29
 elixir
 elixir-ls
 ell
@@ -214,6 +215,8 @@ gdk-pixbuf2
 geoclue
 geocode-glib-2
 geocode-glib-common
+geoip
+geoip-database
 gettext
 ghostscript
 giflib
@@ -243,6 +246,7 @@ gobject-introspection
 gobject-introspection-runtime
 gofumpt
 goimports-reviser
+goimports-reviser-debug
 golines
 google-chrome
 google-java-format
@@ -296,6 +300,7 @@ harfbuzz
 harfbuzz-icu
 haveged
 hdparm
+helm
 help2man
 hicolor-icon-theme
 hidapi
@@ -310,7 +315,10 @@ hwloc
 hyphen
 hyprland
 hyprlang
+hyprlock
+hyprlock-debug
 hyprpaper
+hyprshot
 i2c-tools
 iana-etc
 icu
@@ -355,6 +363,7 @@ kcolorpicker-qt5
 kcompletion5
 kconfig5
 kconfigwidgets5
+kcoreaddons
 kcoreaddons5
 kcrash5
 kdbusaddons5
@@ -367,6 +376,7 @@ keyutils
 kfilemetadata5
 kglobalaccel5
 kguiaddons5
+ki18n
 ki18n5
 kiconthemes5
 kidletime5
@@ -382,17 +392,20 @@ kmod
 knotifications5
 kpackage5
 kpeople5
+kpipewire
 kpty5
 kquickcharts5
 krb5
 kservice5
+kstatusnotifieritem
 ktextwidgets5
 kubectl
 kunitconversion5
-kuserfeedback5
+kuserfeedback
 kwallet5
 kwayland5
 kwidgetsaddons5
+kwindowsystem
 kwindowsystem5
 kxmlgui5
 l-smash
@@ -469,6 +482,7 @@ libaccounts-glib
 libaccounts-qt
 libadwaita
 libaio
+libao
 libappindicator-gtk3
 libarchive
 libass
@@ -480,6 +494,7 @@ libavc1394
 libavif
 libavtp
 libax25
+libax25-debug
 libb2
 libb64
 libblastrampoline
@@ -491,7 +506,6 @@ libblockdev-mdraid
 libblockdev-nvme
 libblockdev-part
 libblockdev-swap
-libblockdev-utils
 libbluray
 libbpf
 libbs2b
@@ -683,6 +697,7 @@ libsodium
 libsoup
 libsoup3
 libsoxr
+libspeechd
 libsrtp
 libssh
 libssh2
@@ -714,6 +729,7 @@ libutf8proc
 libuv
 libva
 libva-nvidia-driver-git
+libva-nvidia-driver-git-debug
 libvdpau
 libverto
 libvisio
@@ -810,7 +826,6 @@ lv2
 lvm2
 lxappearance
 ly
-lynx
 lz4
 lzo
 m4
@@ -833,6 +848,7 @@ mercurial
 mesa
 mesa-utils
 meson
+minikube
 miniupnpc
 minizip
 mjpegtools
@@ -870,6 +886,7 @@ networkmanager-qt5
 nfs-utils
 nfsidmap
 nftables
+nginx
 nilfs-utils
 ninja
 nlohmann-json
@@ -1128,6 +1145,7 @@ python-pytest-xdist
 python-pytz
 python-pywayland
 python-pywlroots
+python-pyxdg
 python-rapidfuzz
 python-referencing
 python-requests
@@ -1177,6 +1195,7 @@ qt5-location
 qt5-multimedia
 qt5-quickcontrols
 qt5-quickcontrols2
+qt5-remoteobjects
 qt5-speech
 qt5-svg
 qt5-systems
@@ -1192,11 +1211,14 @@ qt6-5compat
 qt6-base
 qt6-declarative
 qt6-imageformats
+qt6-positioning
 qt6-serialport
 qt6-svg
 qt6-tools
 qt6-translations
 qt6-wayland
+qt6-webchannel
+qt6-webengine
 ranger
 raptor
 rasqal
@@ -1275,6 +1297,7 @@ s-nail
 sbc
 scdoc
 scons
+sdbus-cpp
 sdl2
 seabios
 seatd
@@ -1304,6 +1327,7 @@ sound-theme-freedesktop
 soundtouch
 spandsp
 spdlog
+speech-dispatcher
 speedtest-cli
 speex
 speexdsp
@@ -1324,6 +1348,7 @@ swaybg
 swayidle
 swaylock
 syndication5
+syntax-highlighting
 syntax-highlighting5
 sysfsutils
 sysstat
@@ -1414,6 +1439,7 @@ waybar
 wayland
 wayland-protocols
 wayland-utils
+webcord
 webkit2gtk
 webrtc-audio-processing
 webrtc-audio-processing-1
@@ -1447,6 +1473,7 @@ xcb-util-xrm
 xclip
 xdg-dbus-proxy
 xdg-desktop-portal
+xdg-desktop-portal-hyprland
 xdg-desktop-portal-wlr
 xdg-user-dirs
 xdg-utils
@@ -1481,6 +1508,7 @@ xorg-xwayland
 xorgproto
 xsettingsd
 xvidcore
+xwaylandvideobridge
 xxhash
 xz
 yarn
@@ -1490,6 +1518,7 @@ yay-debug
 yelp-tools
 yelp-xsl
 zbar
+zed-debug
 zenity
 zeromq
 zimg
