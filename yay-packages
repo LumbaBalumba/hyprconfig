@@ -104,6 +104,7 @@ coreutils
 cpio
 cppdap
 cryptsetup
+cuda
 curl
 cxxbridge
 dart
@@ -126,6 +127,7 @@ dhclient
 diffuse
 diffutils
 ding-libs
+discord_arch_electron
 dkms
 dmidecode
 dmraid
@@ -1213,6 +1215,7 @@ qt6-declarative
 qt6-imageformats
 qt6-positioning
 qt6-serialport
+qt6-shadertools
 qt6-svg
 qt6-tools
 qt6-translations

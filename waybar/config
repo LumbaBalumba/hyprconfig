@@ -12,16 +12,6 @@
     "hyprland/window": {
         "format": "{}"
     },
-    "cpu": {
-        "format": "{}",
-        "tooltip": false,
-        "on-click": "alacritty --hold -e btop"
-    },
-    "memory": {
-        "format": " {}",
-        "tooltip": false,
-        "on-click": "alacritty --hold -e btop"
-    },
 
    "custom/weather" : {
         //shows the current weather and forecast
@@ -116,6 +106,7 @@
 	    "format-connected": " {num_connections}",
 	    "tooltip-format": "{device_alias}",
 	    "tooltip-format-connected": " {device_enumerate}",
-	    "tooltip-format-enumerate-connected": "{device_alias}"
+	    "tooltip-format-enumerate-connected": "{device_alias}",
+        "on-click": "blueman-manager"
     }
 }
