@@ -9,7 +9,16 @@ local util = require "lspconfig.util"
 lspconfig.pyright.setup({
     on_attach = on_attach,
     capabilities = capabilities,
-    filetypes = {"python"}
+    filetypes = {"python"},
+    before_init = function (params, config_)
+        local Path = require "plenary.path"
+        local venv = Path:new((config_.root_dir:gsub("/", Path.path.sep)), ".venv")
+        if venv:joinpath("bin"):is_dir() then
+          config_.settings.python.pythonPath = tostring(venv:joinpath("bin", "python"))
+        else
+          config_.settings.python.pythonPath = tostring(venv:joinpath("Scripts", "python.exe"))
+        end
+    end
 })
 
 lspconfig.clangd.setup({

@@ -51,12 +51,12 @@ base
 base-devel
 bash
 bash-completion
+batsignal-debug
 bind
 binutils
 bison
 blas
 blas64-openblas
-blueman
 bluez
 bluez-libs
 bluez-utils
@@ -104,6 +104,7 @@ coreutils
 cpio
 cppdap
 cryptsetup
+cuda
 curl
 cxxbridge
 dart
@@ -134,6 +135,7 @@ dnssec-anchors
 docbook-xml
 docbook-xsl
 docker
+docker-buildx
 docker-compose
 dosfstools
 dotconf
@@ -188,7 +190,6 @@ file
 file-roller
 filesystem
 findutils
-firefox-developer-edition
 firewalld
 flac
 flex
@@ -248,7 +249,7 @@ gofumpt
 goimports-reviser
 goimports-reviser-debug
 golines
-google-chrome
+golines-debug
 google-java-format
 gotop
 gperf
@@ -313,6 +314,7 @@ hwdetect
 hwinfo
 hwloc
 hyphen
+hyprcursor
 hyprland
 hyprlang
 hyprlock
@@ -586,6 +588,7 @@ libidn2
 libiec61883
 libimagequant
 libimobiledevice
+libimobiledevice-glue
 libinih
 libinput
 libinstpatch
@@ -628,6 +631,7 @@ libmtp
 libmwaw
 libmysofa
 libnatpmp
+libnautilus-extension
 libndp
 libnet
 libnetfilter_conntrack
@@ -667,6 +671,7 @@ libplist
 libpng
 libportal
 libportal-gtk3
+libportal-gtk4
 libproxy
 libpsl
 libpulse
@@ -886,7 +891,6 @@ networkmanager-qt5
 nfs-utils
 nfsidmap
 nftables
-nginx
 nilfs-utils
 ninja
 nlohmann-json
@@ -911,7 +915,6 @@ nvidia-dkms
 nvidia-utils
 nvm
 oath-toolkit
-obs-studio
 ocl-icd
 oh-my-zsh-git
 oh-my-zsh-plugin-syntax-highlighting
@@ -1037,7 +1040,6 @@ popt
 portaudio
 postgresql
 postgresql-libs
-postman-bin
 potrace
 power-profiles-daemon
 ppp
@@ -1165,6 +1167,7 @@ python-tomli
 python-tomlkit
 python-tqdm
 python-trove-classifiers
+python-typeguard
 python-typing_extensions
 python-ujson
 python-urllib3
@@ -1213,6 +1216,7 @@ qt6-declarative
 qt6-imageformats
 qt6-positioning
 qt6-serialport
+qt6-shadertools
 qt6-svg
 qt6-tools
 qt6-translations
@@ -1298,6 +1302,7 @@ sbc
 scdoc
 scons
 sdbus-cpp
+sddm
 sdl2
 seabios
 seatd
@@ -1362,16 +1367,11 @@ talloc
 tar
 tcl
 tdb
-telegram-desktop
 tepl
 tevent
 texinfo
 thin-provisioning-tools
 threadweaver5
-thunar
-thunar-archive-plugin
-thunar-media-tags-plugin
-thunar-volman
 tk
 tldr
 tmate
@@ -1381,6 +1381,13 @@ tracker3
 transmission-gtk
 tree
 tree-sitter
+tree-sitter-bash
+tree-sitter-c
+tree-sitter-lua
+tree-sitter-markdown
+tree-sitter-python
+tree-sitter-query
+tree-sitter-vimdoc
 tslib
 ttf-bitstream-vera
 ttf-dejavu
@@ -1418,8 +1425,6 @@ vim
 vim-runtime
 virtiofsd
 virtualgl
-visual-studio-code-bin
-visual-studio-code-bin-debug
 vmaf
 volume_key
 volumectl
@@ -1439,7 +1444,6 @@ waybar
 wayland
 wayland-protocols
 wayland-utils
-webcord
 webkit2gtk
 webrtc-audio-processing
 webrtc-audio-processing-1
