@@ -915,7 +915,6 @@ nvidia-dkms
 nvidia-utils
 nvm
 oath-toolkit
-obs-studio
 ocl-icd
 oh-my-zsh-git
 oh-my-zsh-plugin-syntax-highlighting
@@ -1041,7 +1040,6 @@ popt
 portaudio
 postgresql
 postgresql-libs
-postman-bin
 potrace
 power-profiles-daemon
 ppp
