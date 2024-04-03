@@ -203,11 +203,10 @@ default_border pixel 2
 default_floating_border pixel 2
 
 
-bindsym $mod+b exec google-chrome-stable
+bindsym $mod+b exec firefox-developer-edition
 
 
 assign [class="firefoxdeveloperedition"] $ws2
-assign [class="Google-chrome"] $ws2
 assign [class="telegram-desktop"] $ws4
 assign [class="discord"] $ws4
 

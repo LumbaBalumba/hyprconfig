@@ -33,7 +33,7 @@ argon2
 arm-none-eabi-binutils
 arm-none-eabi-gcc
 arm-none-eabi-newlib
-asm-lsp
+asciidoc
 at-spi2-core
 atkmm
 atool
@@ -51,12 +51,12 @@ base
 base-devel
 bash
 bash-completion
-batsignal-debug
 bind
 binutils
 bison
 blas
 blas64-openblas
+blueman
 bluez
 bluez-libs
 bluez-utils
@@ -104,7 +104,6 @@ coreutils
 cpio
 cppdap
 cryptsetup
-cuda
 curl
 cxxbridge
 dart
@@ -127,6 +126,7 @@ dhclient
 diffuse
 diffutils
 ding-libs
+discord
 dkms
 dmidecode
 dmraid
@@ -135,7 +135,6 @@ dnssec-anchors
 docbook-xml
 docbook-xsl
 docker
-docker-buildx
 docker-compose
 dosfstools
 dotconf
@@ -145,6 +144,7 @@ dracula-grub-theme-git
 dracula-gtk-theme
 dracula-icons-theme
 dracut
+drun
 dtc
 duf
 duktape
@@ -162,6 +162,7 @@ eglexternalplatform
 electron
 electron22
 electron25
+electron25-debug
 electron28
 electron29
 elixir
@@ -170,6 +171,7 @@ ell
 enca
 enchant
 erlang-nox
+esbuild
 eslint
 ethtool
 exfatprogs
@@ -181,6 +183,7 @@ faac
 faad2
 fakeroot
 fcft
+feh
 ffcall
 ffmpeg
 ffmpegthumbnailer
@@ -190,6 +193,7 @@ file
 file-roller
 filesystem
 findutils
+firefox-developer-edition
 firewalld
 flac
 flex
@@ -211,6 +215,8 @@ gcc
 gcc-libs
 gcr-4
 gd
+gdb
+gdb-common
 gdbm
 gdk-pixbuf2
 geoclue
@@ -240,6 +246,7 @@ gnome-desktop
 gnome-desktop-4
 gnome-desktop-common
 gnome-settings-daemon
+gnu-free-fonts
 gnupg
 gnutls
 go
@@ -250,6 +257,7 @@ goimports-reviser
 goimports-reviser-debug
 golines
 golines-debug
+google-chrome
 google-java-format
 gotop
 gperf
@@ -297,6 +305,7 @@ gupnp
 gupnp-igd
 gzip
 haguichi
+haguichi-debug
 harfbuzz
 harfbuzz-icu
 haveged
@@ -322,6 +331,11 @@ hyprlock-debug
 hyprpaper
 hyprshot
 i2c-tools
+i3-gaps-rounded-git
+i3-gaps-rounded-git-debug
+i3blocks
+i3lock
+i3status
 iana-etc
 icu
 iio-sensor-proxy
@@ -554,6 +568,7 @@ libelf
 libepoxy
 libepubgen
 libetonyek
+libev
 libevdev
 libevent
 libexif
@@ -831,6 +846,7 @@ lv2
 lvm2
 lxappearance
 ly
+lynx
 lz4
 lzo
 m4
@@ -891,6 +907,7 @@ networkmanager-qt5
 nfs-utils
 nfsidmap
 nftables
+nginx
 nilfs-utils
 ninja
 nlohmann-json
@@ -912,12 +929,13 @@ ntp
 nuitka
 numactl
 nvidia-dkms
+nvidia-settings
 nvidia-utils
 nvm
 oath-toolkit
+obs-studio
 ocl-icd
 oh-my-zsh-git
-oh-my-zsh-plugin-syntax-highlighting
 oniguruma
 openal
 openblas64
@@ -957,6 +975,7 @@ parted
 pass
 patch
 patchelf
+patchutils
 pavucontrol
 pciutils
 pcre
@@ -1018,6 +1037,7 @@ phonon-qt5-gstreamer
 php
 pico-sdk
 picotool
+picotool-debug
 pinentry
 pipewire
 pipewire-alsa
@@ -1040,6 +1060,7 @@ popt
 portaudio
 postgresql
 postgresql-libs
+postman-bin
 potrace
 power-profiles-daemon
 ppp
@@ -1089,6 +1110,7 @@ python-gobject
 python-greenlet
 python-h11
 python-html5lib
+python-httplib2
 python-httptools
 python-idna
 python-importlib-metadata
@@ -1138,6 +1160,7 @@ python-pydantic-core
 python-pygments
 python-pylsp-mypy
 python-pynvim
+python-pyparsing
 python-pyproject-hooks
 python-pyqt5
 python-pyqt5-sip
@@ -1239,18 +1262,23 @@ reflector
 reiserfsprogs
 rhash
 rnnoise
+rofi
 rpcbind
+rpi-imager
 rsync
 rtkit
 rtmpdump
 rubberband
 ruby
 ruby-abbrev
+ruby-atk
 ruby-base64
 ruby-benchmark
 ruby-bigdecimal
 ruby-bundledgems
 ruby-bundler
+ruby-cairo
+ruby-cairo-gobject
 ruby-cgi
 ruby-csv
 ruby-date
@@ -1266,7 +1294,12 @@ ruby-fiddle
 ruby-fileutils
 ruby-find
 ruby-forwardable
+ruby-gdk_pixbuf2
 ruby-getoptlong
+ruby-gio2
+ruby-glib2
+ruby-gobject-introspection
+ruby-gtk2
 ruby-io-console
 ruby-io-nonblock
 ruby-io-wait
@@ -1276,13 +1309,17 @@ ruby-json
 ruby-logger
 ruby-minitest
 ruby-mutex_m
+ruby-native-package-installer
 ruby-net-http
 ruby-open-uri
+ruby-pango
+ruby-pkg-config
 ruby-power_assert
 ruby-psych
 ruby-racc
 ruby-rake
 ruby-rdoc
+ruby-red-colors
 ruby-reline
 ruby-rexml
 ruby-ruby2_keywords
@@ -1330,6 +1367,7 @@ sonnet5
 sord
 sound-theme-freedesktop
 soundtouch
+source-highlight
 spandsp
 spdlog
 speech-dispatcher
@@ -1367,11 +1405,16 @@ talloc
 tar
 tcl
 tdb
+telegram-desktop
 tepl
 tevent
 texinfo
 thin-provisioning-tools
 threadweaver5
+thunar
+thunar-archive-plugin
+thunar-media-tags-plugin
+thunar-volman
 tk
 tldr
 tmate
@@ -1379,6 +1422,7 @@ tomlplusplus
 tpm2-tss
 tracker3
 transmission-gtk
+transmission-qt
 tree
 tree-sitter
 tree-sitter-bash
@@ -1425,9 +1469,12 @@ vim
 vim-runtime
 virtiofsd
 virtualgl
+visual-studio-code-bin
+visual-studio-code-bin-debug
 vmaf
 volume_key
 volumectl
+volumectl-debug
 vpnc
 vte-common
 vte3
@@ -1444,6 +1491,7 @@ waybar
 wayland
 wayland-protocols
 wayland-utils
+webcord
 webkit2gtk
 webrtc-audio-processing
 webrtc-audio-processing-1
@@ -1489,6 +1537,7 @@ xkeyboard-config
 xl2tpd
 xmldiff
 xmlsec
+xmlto
 xorg-fonts-encodings
 xorg-server
 xorg-server-common
@@ -1515,6 +1564,7 @@ xvidcore
 xwaylandvideobridge
 xxhash
 xz
+yajl
 yarn
 yasm
 yay
@@ -1522,7 +1572,6 @@ yay-debug
 yelp-tools
 yelp-xsl
 zbar
-zed-debug
 zenity
 zeromq
 zimg
