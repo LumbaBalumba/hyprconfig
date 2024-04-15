@@ -14,6 +14,7 @@ adobe-source-han-sans-kr-fonts
 adwaita-cursors
 adwaita-icon-theme
 aha
+alacritty-smooth-cursor-git-debug
 alsa-card-profiles
 alsa-firmware
 alsa-lib
@@ -69,7 +70,6 @@ brotli
 btop
 btrfs-progs
 bubblewrap
-bumblebee
 bzip2
 c-ares
 ca-certificates
@@ -81,20 +81,23 @@ cairomm-1.16
 cantarell-fonts
 capstone
 cargo-audit
+catppuccin-gtk-theme-mocha
 cbindgen
+cblas
 ccache
 cdparanoia
 cfitsio
+chafa
 chromaprint
 chrono-date
 cifs-utils
 clang
+cli11
 clinfo
 clucene
 cmake
 cmake-format
 colord
-compiledb
 compiler-rt
 composer
 confuse
@@ -103,6 +106,7 @@ convertlit
 coreutils
 cpio
 cppdap
+cpupower-gui
 cryptsetup
 curl
 cxxbridge
@@ -119,6 +123,8 @@ dconf
 ddcutil
 debugedit
 default-cursors
+dep
+dep-debug
 desktop-file-utils
 device-mapper
 dex
@@ -136,6 +142,8 @@ docbook-xml
 docbook-xsl
 docker
 docker-compose
+docker-desktop
+docker-desktop-debug
 dosfstools
 dotconf
 double-conversion
@@ -144,7 +152,6 @@ dracula-grub-theme-git
 dracula-gtk-theme
 dracula-icons-theme
 dracut
-drun
 dtc
 duf
 duktape
@@ -160,13 +167,8 @@ efl
 egl-wayland
 eglexternalplatform
 electron
-electron22
-electron25
-electron25-debug
-electron28
 electron29
 elixir
-elixir-ls
 ell
 enca
 enchant
@@ -178,6 +180,7 @@ exfatprogs
 exiv2
 exo
 expat
+extra-cmake-modules
 f2fs-tools
 faac
 faad2
@@ -241,11 +244,6 @@ glslang
 glu
 gmp
 gn
-gnome-common
-gnome-desktop
-gnome-desktop-4
-gnome-desktop-common
-gnome-settings-daemon
 gnu-free-fonts
 gnupg
 gnutls
@@ -259,7 +257,6 @@ golines
 golines-debug
 google-chrome
 google-java-format
-gotop
 gperf
 gperftools
 gpgme
@@ -304,8 +301,6 @@ gulp
 gupnp
 gupnp-igd
 gzip
-haguichi
-haguichi-debug
 harfbuzz
 harfbuzz-icu
 haveged
@@ -317,6 +312,7 @@ hidapi
 highway
 hiredis
 http-parser
+hub
 hunspell
 hwdata
 hwdetect
@@ -327,12 +323,9 @@ hyprcursor
 hyprland
 hyprlang
 hyprlock
-hyprlock-debug
 hyprpaper
 hyprshot
 i2c-tools
-i3-gaps-rounded-git
-i3-gaps-rounded-git-debug
 i3blocks
 i3lock
 i3status
@@ -410,7 +403,6 @@ kpackage5
 kpeople5
 kpipewire
 kpty5
-kquickcharts5
 krb5
 kservice5
 kstatusnotifieritem
@@ -487,7 +479,6 @@ lib32-opencl-nvidia
 lib32-openssl
 lib32-p11-kit
 lib32-sqlite
-lib32-virtualgl
 lib32-vulkan-icd-loader
 lib32-wayland
 lib32-xz
@@ -536,6 +527,7 @@ libcap-ng
 libcdio
 libcdio-paranoia
 libcdr
+libcgif
 libcloudproviders
 libcmis
 libcolord
@@ -752,6 +744,7 @@ libva-nvidia-driver-git
 libva-nvidia-driver-git-debug
 libvdpau
 libverto
+libvips
 libvisio
 libvorbis
 libvpl
@@ -928,20 +921,19 @@ ntfs-3g
 ntp
 nuitka
 numactl
-nvidia-dkms
-nvidia-settings
 nvidia-utils
 nvm
 oath-toolkit
 obs-studio
 ocl-icd
 oh-my-zsh-git
+onetbb
 oniguruma
 openal
 openblas64
-opencl-nvidia
 openconnect
 opencore-amr
+opencv
 openexr
 openjade
 openjpeg2
@@ -970,6 +962,7 @@ pamixer
 pango
 pangomm
 pangomm-2.48
+papirus-icon-theme
 parallel
 parted
 pass
@@ -1014,7 +1007,6 @@ perl-moo
 perl-net-dns
 perl-net-http
 perl-net-ip
-perl-net-netmask
 perl-parallel-forkmanager
 perl-params-util
 perl-role-tiny
@@ -1036,8 +1028,6 @@ phonon-qt5
 phonon-qt5-gstreamer
 php
 pico-sdk
-picotool
-picotool-debug
 pinentry
 pipewire
 pipewire-alsa
@@ -1064,7 +1054,6 @@ postman-bin
 potrace
 power-profiles-daemon
 ppp
-primus
 prison5
 procps-ng
 protobuf
@@ -1095,7 +1084,6 @@ python-colorama
 python-crashtest
 python-cryptography
 python-defusedxml
-python-dictobject
 python-distlib
 python-distro
 python-django
@@ -1246,6 +1234,7 @@ qt6-translations
 qt6-wayland
 qt6-webchannel
 qt6-webengine
+range-v3
 ranger
 raptor
 rasqal
@@ -1300,6 +1289,7 @@ ruby-gio2
 ruby-glib2
 ruby-gobject-introspection
 ruby-gtk2
+ruby-gtk2-debug
 ruby-io-console
 ruby-io-nonblock
 ruby-io-wait
@@ -1418,7 +1408,9 @@ thunar-volman
 tk
 tldr
 tmate
+tmux
 tomlplusplus
+tpm
 tpm2-tss
 tracker3
 transmission-gtk
@@ -1446,10 +1438,13 @@ ttf-nerd-fonts-symbols
 ttf-nerd-fonts-symbols-common
 ttf-opensans
 ttf-ubuntu-font-family
+turbo-base64
+turbo-base64-debug
 tzdata
 uchardet
 udisks2
-ueberzug
+ueberzugpp
+ueberzugpp-debug
 unibilium
 unrar
 unzip
@@ -1463,12 +1458,12 @@ v4l-utils
 vala
 vapoursynth
 vde2
+verdict
 vi
 vid.stab
 vim
 vim-runtime
 virtiofsd
-virtualgl
 visual-studio-code-bin
 visual-studio-code-bin-debug
 vmaf
@@ -1491,7 +1486,6 @@ waybar
 wayland
 wayland-protocols
 wayland-utils
-webcord
 webkit2gtk
 webrtc-audio-processing
 webrtc-audio-processing-1
@@ -1565,6 +1559,7 @@ xwaylandvideobridge
 xxhash
 xz
 yajl
+yandex-music
 yarn
 yasm
 yay

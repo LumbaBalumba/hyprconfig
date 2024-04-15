@@ -1,5 +1,5 @@
 local plugins = {
-    {
+    {"christoomey/vim-tmux-navigator", lazy = false}, {
         "williamboman/mason.nvim",
         lazy = false,
         opts = {
@@ -100,7 +100,7 @@ local plugins = {
         dependencies = {"nvim-lua/plenary.nvim", "stevearc/overseer.nvim"},
         config = function() require "custom.configs.cmake-tools" end
     }, {"tpope/vim-dadbod", lazy = false},
-    {"kristijanhusak/vim-dadbod-ui", lazy=false}
+    {"kristijanhusak/vim-dadbod-ui", lazy = false}
 }
 
 return plugins
