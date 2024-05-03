@@ -130,3 +130,5 @@ export RANGER_LOAD_DEFAULT_RC=false
 export PATH="$PATH:/home/i3alumba/.local/bin"
 
 alias :q="exit"
+alias cc="clang"
+alias c++="clang++"

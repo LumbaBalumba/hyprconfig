@@ -10,13 +10,17 @@ lspconfig.pyright.setup({
     on_attach = on_attach,
     capabilities = capabilities,
     filetypes = {"python"},
-    before_init = function (params, config_)
+    before_init = function(params, config_)
         local Path = require "plenary.path"
-        local venv = Path:new((config_.root_dir:gsub("/", Path.path.sep)), ".venv")
+        local venv = Path:new((config_.root_dir:gsub("/", Path.path.sep)),
+                              ".venv")
         if venv:joinpath("bin"):is_dir() then
-          config_.settings.python.pythonPath = tostring(venv:joinpath("bin", "python"))
+            config_.settings.python.pythonPath = tostring(
+                                                     venv:joinpath("bin",
+                                                                   "python"))
         else
-          config_.settings.python.pythonPath = tostring(venv:joinpath("Scripts", "python.exe"))
+            config_.settings.python.pythonPath =
+                tostring(venv:joinpath("Scripts", "python.exe"))
         end
     end
 })
@@ -69,10 +73,3 @@ lspconfig.neocmake.setup {
     -- root_dir = root_pattern('.git', 'cmake'),
     single_file_support = true
 }
-
--- lspconfig.asm_lsp.setup {
---     on_attach = on_attach,
---     capabilities = capabilities,
---     command = "asm-lsp",
---     filetypes = {"asm", "s", "S"}
--- }

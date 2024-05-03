@@ -81,6 +81,7 @@ cairomm-1.16
 cantarell-fonts
 capstone
 cargo-audit
+catppuccin-cursors-mocha
 catppuccin-gtk-theme-mocha
 cbindgen
 cblas
@@ -168,10 +169,12 @@ egl-wayland
 eglexternalplatform
 electron
 electron29
+electron30
 elixir
 ell
 enca
 enchant
+epub-thumbnailer-git
 erlang-nox
 esbuild
 eslint
@@ -186,6 +189,7 @@ faac
 faad2
 fakeroot
 fcft
+fd
 feh
 ffcall
 ffmpeg
@@ -203,6 +207,7 @@ flex
 fluidsynth
 fmt
 fontconfig
+fontpreview
 freeglut
 freeimage
 freetype2
@@ -222,6 +227,7 @@ gdb
 gdb-common
 gdbm
 gdk-pixbuf2
+gendesk
 geoclue
 geocode-glib-2
 geocode-glib-common
@@ -574,7 +580,9 @@ libfreehand
 libftdi
 libgcrypt
 libgedit-amtk
+libgedit-gfls
 libgedit-gtksourceview
+libgedit-tepl
 libgirepository
 libgit2
 libglvnd
@@ -872,6 +880,7 @@ mlocate
 mobile-broadband-provider-info
 modemmanager
 modemmanager-qt5
+mpdecimal
 mpfr
 mpg123
 mpv
@@ -931,6 +940,7 @@ onetbb
 oniguruma
 openal
 openblas64
+openbsd-netcat
 openconnect
 opencore-amr
 opencv
@@ -1024,9 +1034,11 @@ perl-uri
 perl-www-robotrules
 perl-xml-parser
 perl-xml-writer
+pgadmin4-py-debug
 phonon-qt5
 phonon-qt5-gstreamer
 php
+php-pgsql
 pico-sdk
 pinentry
 pipewire
@@ -1070,6 +1082,7 @@ python-asgiref
 python-attrs
 python-autocommand
 python-bashlex
+python-bottle
 python-build
 python-cachecontrol
 python-cachy
@@ -1083,6 +1096,7 @@ python-click
 python-colorama
 python-crashtest
 python-cryptography
+python-dateutil
 python-defusedxml
 python-distlib
 python-distro
@@ -1091,6 +1105,7 @@ python-docopt
 python-docstring-to-markdown
 python-dulwich
 python-execnet
+python-fasteners
 python-fastjsonschema
 python-filelock
 python-future
@@ -1111,6 +1126,7 @@ python-jaraco.functools
 python-jaraco.text
 python-jedi
 python-jeepney
+python-jinja
 python-jsonschema
 python-jsonschema-specifications
 python-keyring
@@ -1126,9 +1142,11 @@ python-markupsafe
 python-more-itertools
 python-msgpack
 python-mypy_extensions
+python-node-semver
 python-ordered-set
 python-packaging
 python-parso
+python-patch-ng
 python-pexpect
 python-pillow
 python-pip
@@ -1136,6 +1154,7 @@ python-pipx
 python-pkginfo
 python-platformdirs
 python-pluggy
+python-pluginbase
 python-ply
 python-poetry
 python-poetry-core
@@ -1146,6 +1165,7 @@ python-pycparser
 python-pydantic
 python-pydantic-core
 python-pygments
+python-pyjwt
 python-pylsp-mypy
 python-pynvim
 python-pyparsing
@@ -1193,6 +1213,7 @@ python-websockets
 python-wheel
 python-xcffib
 python-xkbcommon
+python-yaml
 python-zipp
 qca-qt5
 qemu-base
@@ -1250,6 +1271,7 @@ refind-theme-dracula
 reflector
 reiserfsprogs
 rhash
+ripgrep
 rnnoise
 rofi
 rpcbind
@@ -1324,6 +1346,10 @@ ruff
 run-parts
 runc
 rustup
+ryzen-controller-bin
+ryzen-controller-bin-debug
+ryzenadj
+ryzenadj-debug
 s-nail
 sbc
 scdoc
@@ -1380,6 +1406,7 @@ svt-hevc
 swaybg
 swayidle
 swaylock
+sxiv
 syndication5
 syntax-highlighting
 syntax-highlighting5
@@ -1396,7 +1423,6 @@ tar
 tcl
 tdb
 telegram-desktop
-tepl
 tevent
 texinfo
 thin-provisioning-tools
@@ -1413,6 +1439,7 @@ tomlplusplus
 tpm
 tpm2-tss
 tracker3
+translate-shell
 transmission-gtk
 transmission-qt
 tree
@@ -1523,6 +1550,7 @@ xdg-desktop-portal-hyprland
 xdg-desktop-portal-wlr
 xdg-user-dirs
 xdg-utils
+xdotool
 xf86-input-libinput
 xf86-video-intel
 xfconf
@@ -1567,6 +1595,7 @@ yay-debug
 yelp-tools
 yelp-xsl
 zbar
+zed-editor-debug
 zenity
 zeromq
 zimg
