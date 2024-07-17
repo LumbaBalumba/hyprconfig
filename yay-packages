@@ -13,6 +13,7 @@ adobe-source-han-sans-jp-fonts
 adobe-source-han-sans-kr-fonts
 adwaita-cursors
 adwaita-icon-theme
+adwaita-icon-theme-legacy
 aha
 alacritty-smooth-cursor-git-debug
 alsa-card-profiles
@@ -24,6 +25,7 @@ alsa-ucm-conf
 alsa-utils
 amd-ucode
 amdvlk
+anydesk-bin
 aom
 appstream
 appstream-qt5
@@ -34,6 +36,7 @@ argon2
 arm-none-eabi-binutils
 arm-none-eabi-gcc
 arm-none-eabi-newlib
+asar
 asciidoc
 at-spi2-core
 atkmm
@@ -119,7 +122,6 @@ dbus
 dbus-broker
 dbus-broker-units
 dbus-glib
-dbus-python
 dconf
 ddcutil
 debugedit
@@ -143,8 +145,7 @@ docbook-xml
 docbook-xsl
 docker
 docker-compose
-docker-desktop
-docker-desktop-debug
+docker-machine
 dosfstools
 dotconf
 double-conversion
@@ -170,7 +171,9 @@ eglexternalplatform
 electron
 electron29
 electron30
+electron31
 elixir
+elixir-ls
 ell
 enca
 enchant
@@ -263,6 +266,8 @@ golines
 golines-debug
 google-chrome
 google-java-format
+gotop-bin
+gotop-bin-debug
 gperf
 gperftools
 gpgme
@@ -290,6 +295,7 @@ gst-plugins-base
 gst-plugins-base-libs
 gst-plugins-ugly
 gstreamer
+gtest
 gtk-doc
 gtk-engine-murrine
 gtk-layer-shell
@@ -298,6 +304,7 @@ gtk2
 gtk3
 gtk4
 gtkd
+gtkglext
 gtkmm-4.0
 gtkmm3
 gtksourceview4
@@ -317,6 +324,7 @@ hicolor-icon-theme
 hidapi
 highway
 hiredis
+htop
 http-parser
 hub
 hunspell
@@ -331,6 +339,7 @@ hyprlang
 hyprlock
 hyprpaper
 hyprshot
+hyprutils
 i2c-tools
 i3blocks
 i3lock
@@ -524,6 +533,8 @@ libbpf
 libbs2b
 libbsd
 libbytesize
+libc++
+libc++abi
 libcaca
 libcamera
 libcamera-ipa
@@ -839,6 +850,8 @@ lsof
 lsscsi
 lua
 lua-language-server
+lua51
+lua51-lpeg
 lua52
 luajit
 luarocks
@@ -926,9 +939,9 @@ npth
 nspr
 nss
 nss-mdns
+nsxiv
 ntfs-3g
 ntp
-nuitka
 numactl
 nvidia-utils
 nvm
@@ -1051,6 +1064,7 @@ pkcs11-helper
 pkgconf
 pkgfile
 playerctl
+poac-debug
 polkit
 polkit-gnome
 polkit-qt5
@@ -1082,21 +1096,28 @@ python-asgiref
 python-attrs
 python-autocommand
 python-bashlex
+python-black
+python-boto3
+python-botocore
 python-bottle
+python-brotli
 python-build
 python-cachecontrol
 python-cachy
 python-cairo
 python-cairocffi
 python-capng
+python-certifi
 python-cffi
 python-charset-normalizer
 python-cleo
 python-click
 python-colorama
+python-cpplint
 python-crashtest
 python-cryptography
 python-dateutil
+python-dbus
 python-defusedxml
 python-distlib
 python-distro
@@ -1127,6 +1148,7 @@ python-jaraco.text
 python-jedi
 python-jeepney
 python-jinja
+python-jmespath
 python-jsonschema
 python-jsonschema-specifications
 python-keyring
@@ -1144,9 +1166,11 @@ python-msgpack
 python-mypy_extensions
 python-node-semver
 python-ordered-set
+python-orjson
 python-packaging
 python-parso
 python-patch-ng
+python-pathspec
 python-pexpect
 python-pillow
 python-pip
@@ -1166,7 +1190,6 @@ python-pydantic
 python-pydantic-core
 python-pygments
 python-pyjwt
-python-pylsp-mypy
 python-pynvim
 python-pyparsing
 python-pyproject-hooks
@@ -1185,6 +1208,7 @@ python-requests
 python-requests-toolbelt
 python-rpds-py
 python-ruff
+python-s3transfer
 python-secretstorage
 python-setuptools
 python-shellingham
@@ -1354,6 +1378,7 @@ s-nail
 sbc
 scdoc
 scons
+sd
 sdbus-cpp
 sddm
 sdl2
@@ -1399,6 +1424,7 @@ sshfs
 startup-notification
 steam
 stoken
+strace
 sudo
 suitesparse
 svt-av1
@@ -1467,10 +1493,10 @@ ttf-opensans
 ttf-ubuntu-font-family
 turbo-base64
 turbo-base64-debug
+typescript
 tzdata
 uchardet
 udisks2
-ueberzugpp
 ueberzugpp-debug
 unibilium
 unrar
@@ -1525,6 +1551,7 @@ wlogout
 wlogout-debug
 wlroots
 wlroots0.16
+wlroots0.17
 woff2
 wofi
 wolfssl
