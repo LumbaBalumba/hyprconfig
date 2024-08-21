@@ -99,17 +99,18 @@ local plugins = {
         dependencies = {"nvim-lua/plenary.nvim", "stevearc/overseer.nvim"},
         config = function() require "custom.configs.cmake-tools" end
     }, {"tpope/vim-dadbod", lazy = false},
-    {"kristijanhusak/vim-dadbod-ui", lazy = false}, {
-        lazy = false,
-        "nvim-telescope/telescope-media-files.nvim",
-        dependencies = {
-            "nvim-lua/popup.nvim", "nvim-lua/plenary.nvim",
-            "nvim-telescope/telescope.nvim"
-        },
-        opts = function()
-            return require "custom.configs.telescope_media_files"
-        end
-    }, {
+    {"kristijanhusak/vim-dadbod-ui", lazy = false}, -- {
+    -- lazy = false,
+    -- "nvim-telescope/telescope-media-files.nvim",
+    -- dependencies = {
+    --     "nvim-lua/popup.nvim", "nvim-lua/plenary.nvim",
+    --     "nvim-telescope/telescope.nvim"
+    -- },
+    -- opts = function()
+    --     return require "custom.configs.telescope_media_files"
+    -- end
+    -- },
+    {
         "nvim-treesitter/nvim-treesitter",
         opts = {
             ensure_installed = {
