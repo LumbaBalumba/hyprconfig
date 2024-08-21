@@ -93,8 +93,8 @@ source $ZSH/oh-my-zsh.sh
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
 # else
-export EDITOR='nvim'
-export VISUAL='nvim'
+export EDITOR=nvim
+export VISUAL=nvim
 # fi
 
 # Compilation flags
@@ -117,10 +117,6 @@ alias vim="nvim"
 #
 export PATH="/home/i3alumba/.cargo/bin/:$PATH"
 
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
 alias setup-python="/usr/bin/python -m venv .venv ; source .venv/bin/activate"
 alias icat="kitten icat"
 
@@ -130,7 +126,11 @@ export RANGER_LOAD_DEFAULT_RC=false
 export PATH="$PATH:/home/i3alumba/.local/bin"
 
 alias :q="exit"
-alias cc="clang"
-alias c++="clang++"
 
-alias films="sshfs i3alumba@95.165.90.137:/home/i3alumba/HDD/Films ~/Film"
+alias films="sshfs i3alumba@95.165.90.137:/home/i3alumba/HDD/Films ~/Films"
+
+alias lf="ranger"
+
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
