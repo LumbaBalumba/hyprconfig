@@ -132,3 +132,5 @@ export PATH="$PATH:/home/i3alumba/.local/bin"
 alias :q="exit"
 alias cc="clang"
 alias c++="clang++"
+
+alias films="sshfs i3alumba@95.165.90.137:/home/i3alumba/HDD/Films ~/Film"
