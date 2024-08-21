@@ -4,11 +4,10 @@ local plugins = {
         lazy = false,
         opts = {
             ensure_installed = {
-                "pyright", "ruff", -- "mypy",
-                "black", "debugpy", "rust-analyzer", "clangd", "codelldb",
-                "typescript-language-server", "elixir-ls", "eslint-lsp",
-                "prettier", "gopls", "neocmakelsp", "cmakelint", "asm-lsp",
-                "asmfmt", "luaformatter"
+                "pyright", "ruff", "black", "debugpy", "rust-analyzer",
+                "clangd", "codelldb", "typescript-language-server", "elixir-ls",
+                "eslint-lsp", "prettier", "gopls", "neocmakelsp", "cmakelint",
+                "asm-lsp", "asmfmt", "luaformatter"
             }
         }
     }, {
@@ -119,6 +118,11 @@ local plugins = {
                 "heex", "java"
             }
         }
+    },
+    {
+        "Ramilito/kubectl.nvim",
+        config = function() require("kubectl").setup() end
+
     }
 }
 

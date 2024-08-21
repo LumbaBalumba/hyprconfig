@@ -130,7 +130,3 @@ alias :q="exit"
 alias films="sshfs i3alumba@95.165.90.137:/home/i3alumba/HDD/Films ~/Films"
 
 alias lf="ranger"
-
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
