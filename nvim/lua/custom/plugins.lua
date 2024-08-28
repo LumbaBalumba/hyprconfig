@@ -116,7 +116,10 @@ local plugins = {
             ensure_installed = {
                 "html", "css", "bash", "c", "cpp", "nasm", "python",
                 "javascript", "typescript", "go", "rust", "elixir", "eex",
-                "heex", "java"
+                "heex", "java", "csv", "dart", "gitignore", "gitcommit",
+                "gomod", "gosum", "graphql", "html", "htmldjango", "http",
+                "hyprlang", "latex", "make", "nasm", "prisma", "proto", "scss",
+                "sql", "vim", "vue", "xml", "yaml", "zig"
             }
         }
     },
@@ -126,6 +129,7 @@ local plugins = {
 
     }, {
         "ldelossa/gh.nvim",
+        lazy = false,
         dependencies = {
             {
                 "ldelossa/litee.nvim",
