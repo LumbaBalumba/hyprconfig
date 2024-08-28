@@ -29,7 +29,6 @@ alsa-utils
 amd-ucode
 amdvlk
 anyrun-git
-anyrun-git-debug
 aom
 apparmor
 appimage-appimage
@@ -39,7 +38,8 @@ appstream
 appstream-glib
 appstream-qt
 appstream-qt5
-aquamarine
+aquamarine-git
+aquamarine-git-debug
 arandr
 archlinux-keyring
 archlinux-xdg-menu
@@ -169,7 +169,6 @@ dhclient
 diffuse
 diffutils
 ding-libs
-discord
 dkms
 dmidecode
 dmraid
@@ -210,6 +209,7 @@ electron
 electron29
 electron30
 electron31
+electron32
 elixir
 elixir-ls
 ell
@@ -284,6 +284,7 @@ gdb
 gdb-common
 gdbm
 gdk-pixbuf2
+gdm
 gendesk
 geoclue
 geocode-glib-2
@@ -295,6 +296,7 @@ ghostscript
 giflib
 git
 git-lfs
+github-cli
 github-copilot-cli
 gjs
 glances
@@ -1288,6 +1290,7 @@ plasma-integration
 plasma-workspace
 plasma5support
 playerctl
+pnpm
 polkit
 polkit-gnome
 polkit-qt5
@@ -1791,6 +1794,7 @@ vala
 vapoursynth
 vde2
 verdict
+vesktop
 vi
 vid.stab
 vim
@@ -1819,7 +1823,6 @@ waybar
 wayland
 wayland-protocols
 wayland-utils
-webcord
 webkit2gtk
 webkit2gtk-4.1
 webkitgtk-6.0
