@@ -89,13 +89,7 @@ local plugins = {
         lazy = false,
         "mhartington/formatter.nvim",
         opts = function() return require "custom.configs.formatter" end
-    }, {lazy = false, "dinhhuy258/git.nvim"}, -- {
-    --     "nvimtools/none-ls.nvim",
-    --     lazy = false,
-    --     ft = {"python", "go", "elixir", "javascript", "typescript", "html", "css"},
-    --     opts = function() return require "custom.configs.null-ls" end
-    -- },
-    {
+    }, {lazy = false, "dinhhuy258/git.nvim"}, {
         "jose-elias-alvarez/null-ls.nvim",
         lazy = false,
         ft = {
@@ -104,12 +98,11 @@ local plugins = {
         opts = function() return require "custom.configs.null-ls" end
     }, {
         "Civitasv/cmake-tools.nvim",
-        lazy = false,
+        lazy = true,
         dependencies = {"nvim-lua/plenary.nvim", "stevearc/overseer.nvim"},
         config = function() require "custom.configs.cmake-tools" end
     }, {"tpope/vim-dadbod", lazy = false},
-    {"kristijanhusak/vim-dadbod-ui", lazy = false}, -- {
-    {
+    {"kristijanhusak/vim-dadbod-ui", lazy = false}, {
         "nvim-treesitter/nvim-treesitter",
         opts = {
             ensure_installed = {
@@ -138,8 +131,8 @@ local plugins = {
         config = function() require("litee.gh").setup() end
     }, {
         "elixir-tools/elixir-tools.nvim",
+        lazy = true,
         version = "*",
-        event = {"BufReadPre", "BufNewFile"},
         config = function()
             local elixir = require("elixir")
             local elixirls = require("elixir.elixirls")
@@ -157,21 +150,15 @@ local plugins = {
                                        {buffer = true, noremap = true})
                         vim.keymap.set("n", "<space>tp", ":ElixirToPipe<cr>",
                                        {buffer = true, noremap = true})
-                        -- vim.keymap.set("v", "<space>em",
-                        --                ":ElixirExpandMacro<cr>",
-                        --                {buffer = true, noremap = true})
                     end
                 },
                 projectionist = {enable = true}
             }
         end,
         dependencies = {"nvim-lua/plenary.nvim"}
-    }, {
-        'ckipp01/nvim-jenkinsfile-linter',
-        lazy = false,
-        dependencies = {"nvim-lua/plenary.nvim"}
-    }, {'mustache/vim-mustache-handlebars', ft = {'html', 'hbs', 'handlebars'}}
-
+    }, {'mustache/vim-mustache-handlebars', ft = {'html', 'hbs', 'handlebars'}},
+    {"cespare/vim-go-templates", ft = {"go", "tmpl"}, config = function() end},
+    {"burnettk/vim-jenkins"}, {"nvim-java/nvim-java"}
 }
 
 return plugins

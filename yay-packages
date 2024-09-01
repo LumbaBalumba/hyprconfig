@@ -139,6 +139,7 @@ convertlit
 coreutils
 cpio
 cppdap
+cpupower
 cpupower-gui
 cracklib
 cryptsetup
@@ -357,6 +358,7 @@ graphviz
 grep
 grim
 groff
+groovy-language-server-git
 grpcui
 grpcui-debug
 grpcurl
@@ -487,6 +489,7 @@ jbig2dec
 jbigkit
 jdk-openjdk
 jdk17-openjdk
+jdtls
 jemalloc
 jenkins
 jfsutils
@@ -1083,6 +1086,7 @@ mariadb-libs
 mauikit
 mauikit-accounts
 mauiman
+maven
 mbedtls
 mbedtls2
 md4c

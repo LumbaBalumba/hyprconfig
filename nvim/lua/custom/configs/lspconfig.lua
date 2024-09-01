@@ -56,7 +56,7 @@ lspconfig.gopls.setup {
     on_attach = on_attach,
     capabilities = capabilities,
     cmd = {"gopls"},
-    filetypes = {"go", "gomod", "gowork", "gotmpl"},
+    filetypes = {"go", "gomod", "gowork", "gotmpl", "tmpl"},
     root_dir = util.root_pattern("go.work", "go.mod", ".git"),
     settings = {
         completeUnimported = true,
@@ -87,3 +87,5 @@ lspconfig.asm_lsp.setup {
     cmd = {"asm-lsp"},
     filetypes = {'asm', 'vmasm'}
 }
+
+lspconfig.jdtls.setup {on_attach = on_attach, capabilities = capabilities}
