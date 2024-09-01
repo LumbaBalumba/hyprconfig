@@ -71,6 +71,19 @@ lspconfig.neocmake.setup {
     capabilities = capabilities,
     cmd = {"neocmakelsp", "--stdio"},
     filetypes = {"cmake", "txt"},
-    -- root_dir = root_pattern('.git', 'cmake'),
     single_file_support = true
+}
+
+lspconfig.elixirls.setup {
+    on_attach = on_attach,
+    capabilities = capabilities,
+    cmd = {"elixir-ls"},
+    filetypes = {'elixir', 'eelixir', 'heex', 'surface', "ex", "eex"}
+}
+
+lspconfig.asm_lsp.setup {
+    on_attach = on_attach,
+    capabilities = capabilities,
+    cmd = {"asm-lsp"},
+    filetypes = {'asm', 'vmasm'}
 }

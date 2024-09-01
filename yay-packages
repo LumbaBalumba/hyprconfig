@@ -161,6 +161,7 @@ ddcutil
 debugedit
 deepin-desktop-base
 default-cursors
+delve
 dep
 dep-debug
 desktop-file-utils

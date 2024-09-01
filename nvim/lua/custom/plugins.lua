@@ -7,7 +7,8 @@ local plugins = {
                 "pyright", "ruff", "black", "debugpy", "rust-analyzer",
                 "clangd", "codelldb", "typescript-language-server", "elixir-ls",
                 "eslint-lsp", "prettier", "gopls", "neocmakelsp", "cmakelint",
-                "asm-lsp", "asmfmt", "luaformatter", "impl", "buf", "curlylint", "goimports", "actionlint", "shfmt"
+                "asm-lsp", "asmfmt", "luaformatter", "impl", "buf", "curlylint",
+                "goimports", "actionlint", "shfmt"
             }
         }
     }, {
@@ -69,7 +70,7 @@ local plugins = {
     }, {
         lazy = false,
         "rcarriga/nvim-dap-ui",
-        dependencies = "mfussenegger/nvim-dap",
+        dependencies = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"},
         config = function()
             local dap = require("dap")
             local dapui = require("dapui")
@@ -95,7 +96,7 @@ local plugins = {
     --     opts = function() return require "custom.configs.null-ls" end
     -- },
     {
-        "joes-elias-alvarez/null-ls.nvim",
+        "jose-elias-alvarez/null-ls.nvim",
         lazy = false,
         ft = {
             "python", "go", "elixir", "javascript", "typescript", "html", "css"
@@ -117,7 +118,7 @@ local plugins = {
                 "heex", "java", "csv", "dart", "gitignore", "gitcommit",
                 "gomod", "gosum", "graphql", "html", "htmldjango", "http",
                 "hyprlang", "latex", "make", "nasm", "prisma", "proto", "scss",
-                "sql", "vim", "vue", "xml", "yaml", "zig", "gotmpl"
+                "sql", "vim", "vue", "xml", "yaml", "zig", "gotmpl", "glimmer"
             }
         }
     },
@@ -135,7 +136,42 @@ local plugins = {
             }
         },
         config = function() require("litee.gh").setup() end
-    }
+    }, {
+        "elixir-tools/elixir-tools.nvim",
+        version = "*",
+        event = {"BufReadPre", "BufNewFile"},
+        config = function()
+            local elixir = require("elixir")
+            local elixirls = require("elixir.elixirls")
+
+            elixir.setup {
+                nextls = {enable = true},
+                elixirls = {
+                    enable = true,
+                    settings = elixirls.settings {
+                        dialyzerEnabled = false,
+                        enableTestLenses = false
+                    },
+                    on_attach = function(client, bufnr)
+                        vim.keymap.set("n", "<space>fp", ":ElixirFromPipe<cr>",
+                                       {buffer = true, noremap = true})
+                        vim.keymap.set("n", "<space>tp", ":ElixirToPipe<cr>",
+                                       {buffer = true, noremap = true})
+                        -- vim.keymap.set("v", "<space>em",
+                        --                ":ElixirExpandMacro<cr>",
+                        --                {buffer = true, noremap = true})
+                    end
+                },
+                projectionist = {enable = true}
+            }
+        end,
+        dependencies = {"nvim-lua/plenary.nvim"}
+    }, {
+        'ckipp01/nvim-jenkinsfile-linter',
+        lazy = false,
+        dependencies = {"nvim-lua/plenary.nvim"}
+    }, {'mustache/vim-mustache-handlebars', ft = {'html', 'hbs', 'handlebars'}}
+
 }
 
 return plugins
