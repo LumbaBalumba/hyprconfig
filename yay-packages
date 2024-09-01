@@ -28,12 +28,12 @@ alsa-ucm-conf
 alsa-utils
 amd-ucode
 amdvlk
+anydesk-bin
 anyrun-git
 aom
 apparmor
 appimage-appimage
 appimage-installer
-appimage-installer-debug
 appstream
 appstream-glib
 appstream-qt
@@ -48,6 +48,7 @@ aribb24
 arm-none-eabi-binutils
 arm-none-eabi-gcc
 arm-none-eabi-newlib
+armcord
 asar
 asciidoc
 asus-fan-dkms-git
@@ -330,6 +331,7 @@ gnu-free-fonts
 gnupg
 gnutls
 go
+go-tools
 gobject-introspection
 gobject-introspection-runtime
 gofumpt
@@ -354,6 +356,10 @@ graphviz
 grep
 grim
 groff
+grpcui
+grpcui-debug
+grpcurl
+grpcurl-debug
 grub
 gsettings-desktop-schemas
 gsettings-qt
@@ -1164,6 +1170,7 @@ obs-studio
 ocean-sound-theme
 ocl-icd
 oh-my-zsh-git
+ollama-cuda
 onetbb
 oniguruma
 openal

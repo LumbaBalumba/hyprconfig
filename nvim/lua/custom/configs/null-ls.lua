@@ -9,8 +9,14 @@ local opts = {
         null_ls.builtins.formatting.prettier,
         null_ls.builtins.formatting.gofumpt,
         null_ls.builtins.formatting.goimports_reviser,
-        null_ls.builtins.formatting.golines, null_ls.builtins.formatting.asmfmt,
-        null_ls.builtins.formatting.lua_format
+        null_ls.builtins.formatting.goimports,
+        null_ls.builtins.code_actions.impl, null_ls.builtins.formatting.golines,
+        null_ls.builtins.formatting.asmfmt,
+        null_ls.builtins.formatting.lua_format,
+        null_ls.builtins.diagnostics.curlylint,
+        null_ls.builtins.diagnostics.buf,
+        null_ls.builtins.diagnostics.actionlint,
+        null_ls.builtins.formatting.shfmt
     },
     on_attach = function(client, bufnr)
         if client.supports_method("textDocument/formatting") then

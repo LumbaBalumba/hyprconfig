@@ -130,6 +130,5 @@ alias :q="exit"
 alias films="sshfs i3alumba@95.165.90.137:/home/i3alumba/HDD/Films ~/Films"
 
 alias lf="ranger"
-if [ "$TMUX" = "" ]; then tmux; fi
 
 export ELECTRON_USE_OZONE=1

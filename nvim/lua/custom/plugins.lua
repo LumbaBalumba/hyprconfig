@@ -7,7 +7,7 @@ local plugins = {
                 "pyright", "ruff", "black", "debugpy", "rust-analyzer",
                 "clangd", "codelldb", "typescript-language-server", "elixir-ls",
                 "eslint-lsp", "prettier", "gopls", "neocmakelsp", "cmakelint",
-                "asm-lsp", "asmfmt", "luaformatter"
+                "asm-lsp", "asmfmt", "luaformatter", "impl", "buf", "curlylint", "goimports", "actionlint", "shfmt"
             }
         }
     }, {
@@ -88,10 +88,18 @@ local plugins = {
         lazy = false,
         "mhartington/formatter.nvim",
         opts = function() return require "custom.configs.formatter" end
-    }, {lazy = false, "dinhhuy258/git.nvim"}, {
+    }, {lazy = false, "dinhhuy258/git.nvim"}, -- {
+    --     "nvimtools/none-ls.nvim",
+    --     lazy = false,
+    --     ft = {"python", "go", "elixir", "javascript", "typescript", "html", "css"},
+    --     opts = function() return require "custom.configs.null-ls" end
+    -- },
+    {
+        "joes-elias-alvarez/null-ls.nvim",
         lazy = false,
-        "jose-elias-alvarez/null-ls.nvim",
-        ft = {"python", "go"},
+        ft = {
+            "python", "go", "elixir", "javascript", "typescript", "html", "css"
+        },
         opts = function() return require "custom.configs.null-ls" end
     }, {
         "Civitasv/cmake-tools.nvim",
@@ -100,16 +108,6 @@ local plugins = {
         config = function() require "custom.configs.cmake-tools" end
     }, {"tpope/vim-dadbod", lazy = false},
     {"kristijanhusak/vim-dadbod-ui", lazy = false}, -- {
-    -- lazy = false,
-    -- "nvim-telescope/telescope-media-files.nvim",
-    -- dependencies = {
-    --     "nvim-lua/popup.nvim", "nvim-lua/plenary.nvim",
-    --     "nvim-telescope/telescope.nvim"
-    -- },
-    -- opts = function()
-    --     return require "custom.configs.telescope_media_files"
-    -- end
-    -- },
     {
         "nvim-treesitter/nvim-treesitter",
         opts = {
@@ -119,7 +117,7 @@ local plugins = {
                 "heex", "java", "csv", "dart", "gitignore", "gitcommit",
                 "gomod", "gosum", "graphql", "html", "htmldjango", "http",
                 "hyprlang", "latex", "make", "nasm", "prisma", "proto", "scss",
-                "sql", "vim", "vue", "xml", "yaml", "zig"
+                "sql", "vim", "vue", "xml", "yaml", "zig", "gotmpl"
             }
         }
     },
