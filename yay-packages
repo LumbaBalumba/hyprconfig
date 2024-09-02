@@ -28,12 +28,12 @@ alsa-ucm-conf
 alsa-utils
 amd-ucode
 amdvlk
+anydesk-bin
 anyrun-git
 aom
 apparmor
 appimage-appimage
 appimage-installer
-appimage-installer-debug
 appstream
 appstream-glib
 appstream-qt
@@ -48,6 +48,7 @@ aribb24
 arm-none-eabi-binutils
 arm-none-eabi-gcc
 arm-none-eabi-newlib
+armcord
 asar
 asciidoc
 asus-fan-dkms-git
@@ -138,6 +139,7 @@ convertlit
 coreutils
 cpio
 cppdap
+cpupower
 cpupower-gui
 cracklib
 cryptsetup
@@ -160,6 +162,7 @@ ddcutil
 debugedit
 deepin-desktop-base
 default-cursors
+delve
 dep
 dep-debug
 desktop-file-utils
@@ -330,6 +333,7 @@ gnu-free-fonts
 gnupg
 gnutls
 go
+go-tools
 gobject-introspection
 gobject-introspection-runtime
 gofumpt
@@ -347,6 +351,7 @@ gpgme
 gpm
 gptfdisk
 gradience
+gradle
 graphene
 graphicsmagick
 graphite
@@ -354,6 +359,11 @@ graphviz
 grep
 grim
 groff
+groovy-language-server-git
+grpcui
+grpcui-debug
+grpcurl
+grpcurl-debug
 grub
 gsettings-desktop-schemas
 gsettings-qt
@@ -480,6 +490,7 @@ jbig2dec
 jbigkit
 jdk-openjdk
 jdk17-openjdk
+jdtls
 jemalloc
 jenkins
 jfsutils
@@ -1076,6 +1087,7 @@ mariadb-libs
 mauikit
 mauikit-accounts
 mauiman
+maven
 mbedtls
 mbedtls2
 md4c
@@ -1155,8 +1167,8 @@ ntp
 nuget
 numactl
 nvidia-container-toolkit
+nvidia-dkms
 nvidia-docker-compose
-nvidia-open-dkms
 nvidia-utils
 nvm
 oath-toolkit
@@ -1164,6 +1176,7 @@ obs-studio
 ocean-sound-theme
 ocl-icd
 oh-my-zsh-git
+ollama-cuda
 onetbb
 oniguruma
 openal
@@ -1291,6 +1304,8 @@ plasma-workspace
 plasma5support
 playerctl
 pnpm
+poac
+poac-debug
 polkit
 polkit-gnome
 polkit-qt5
@@ -1868,9 +1883,7 @@ xdg-desktop-portal
 xdg-desktop-portal-gnome
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland-git
-xdg-desktop-portal-hyprland-git-debug
 xdg-desktop-portal-kde
-xdg-desktop-portal-wlr
 xdg-user-dirs
 xdg-user-dirs-gtk
 xdg-utils

@@ -7,7 +7,8 @@ local plugins = {
                 "pyright", "ruff", "black", "debugpy", "rust-analyzer",
                 "clangd", "codelldb", "typescript-language-server", "elixir-ls",
                 "eslint-lsp", "prettier", "gopls", "neocmakelsp", "cmakelint",
-                "asm-lsp", "asmfmt", "luaformatter"
+                "asm-lsp", "asmfmt", "luaformatter", "impl", "buf", "curlylint",
+                "goimports", "actionlint", "shfmt"
             }
         }
     }, {
@@ -69,7 +70,7 @@ local plugins = {
     }, {
         lazy = false,
         "rcarriga/nvim-dap-ui",
-        dependencies = "mfussenegger/nvim-dap",
+        dependencies = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"},
         config = function()
             local dap = require("dap")
             local dapui = require("dapui")
@@ -89,13 +90,15 @@ local plugins = {
         "mhartington/formatter.nvim",
         opts = function() return require "custom.configs.formatter" end
     }, {lazy = false, "dinhhuy258/git.nvim"}, {
-        lazy = false,
         "jose-elias-alvarez/null-ls.nvim",
-        ft = {"python", "go"},
+        lazy = false,
+        ft = {
+            "python", "go", "elixir", "javascript", "typescript", "html", "css"
+        },
         opts = function() return require "custom.configs.null-ls" end
     }, {
         "Civitasv/cmake-tools.nvim",
-        lazy = false,
+        lazy = true,
         dependencies = {"nvim-lua/plenary.nvim", "stevearc/overseer.nvim"},
         config = function() require "custom.configs.cmake-tools" end
     }, {"tpope/vim-dadbod", lazy = false},
@@ -109,7 +112,7 @@ local plugins = {
                 "heex", "java", "csv", "dart", "gitignore", "gitcommit",
                 "gomod", "gosum", "graphql", "html", "htmldjango", "http",
                 "hyprlang", "latex", "make", "nasm", "prisma", "proto", "scss",
-                "sql", "vim", "vue", "xml", "yaml", "zig"
+                "sql", "vim", "vue", "xml", "yaml", "zig", "gotmpl", "glimmer"
             }
         }
     },
@@ -127,7 +130,36 @@ local plugins = {
             }
         },
         config = function() require("litee.gh").setup() end
-    }
+    }, {
+        "elixir-tools/elixir-tools.nvim",
+        lazy = true,
+        version = "*",
+        config = function()
+            local elixir = require("elixir")
+            local elixirls = require("elixir.elixirls")
+
+            elixir.setup {
+                nextls = {enable = true},
+                elixirls = {
+                    enable = true,
+                    settings = elixirls.settings {
+                        dialyzerEnabled = false,
+                        enableTestLenses = false
+                    },
+                    on_attach = function(client, bufnr)
+                        vim.keymap.set("n", "<space>fp", ":ElixirFromPipe<cr>",
+                                       {buffer = true, noremap = true})
+                        vim.keymap.set("n", "<space>tp", ":ElixirToPipe<cr>",
+                                       {buffer = true, noremap = true})
+                    end
+                },
+                projectionist = {enable = true}
+            }
+        end,
+        dependencies = {"nvim-lua/plenary.nvim"}
+    }, {'mustache/vim-mustache-handlebars', ft = {'html', 'hbs', 'handlebars'}},
+    {"cespare/vim-go-templates", ft = {"go", "tmpl"}, config = function() end},
+    {"burnettk/vim-jenkins"}, {"nvim-java/nvim-java"}
 }
 
 return plugins

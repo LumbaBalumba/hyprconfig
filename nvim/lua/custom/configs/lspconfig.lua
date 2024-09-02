@@ -30,6 +30,7 @@ lspconfig.clangd.setup({
         client.server_capabilities.signatureProvider = false
         on_attach(client, bufnr)
     end,
+    filetypes = {"c", "cpp", "h", "hpp", "cc"},
     capabilities = capabilities,
     cmd = {"clangd", "--offset-encoding=utf-16", "--enable-config"}
 })
@@ -55,7 +56,7 @@ lspconfig.gopls.setup {
     on_attach = on_attach,
     capabilities = capabilities,
     cmd = {"gopls"},
-    filetypes = {"go", "gomod", "gowork", "gotmpl"},
+    filetypes = {"go", "gomod", "gowork", "gotmpl", "tmpl"},
     root_dir = util.root_pattern("go.work", "go.mod", ".git"),
     settings = {
         completeUnimported = true,
@@ -70,6 +71,21 @@ lspconfig.neocmake.setup {
     capabilities = capabilities,
     cmd = {"neocmakelsp", "--stdio"},
     filetypes = {"cmake", "txt"},
-    -- root_dir = root_pattern('.git', 'cmake'),
     single_file_support = true
 }
+
+lspconfig.elixirls.setup {
+    on_attach = on_attach,
+    capabilities = capabilities,
+    cmd = {"elixir-ls"},
+    filetypes = {'elixir', 'eelixir', 'heex', 'surface', "ex", "eex"}
+}
+
+lspconfig.asm_lsp.setup {
+    on_attach = on_attach,
+    capabilities = capabilities,
+    cmd = {"asm-lsp"},
+    filetypes = {'asm', 'vmasm'}
+}
+
+lspconfig.jdtls.setup {on_attach = on_attach, capabilities = capabilities}
