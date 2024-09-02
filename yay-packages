@@ -351,6 +351,7 @@ gpgme
 gpm
 gptfdisk
 gradience
+gradle
 graphene
 graphicsmagick
 graphite
@@ -1166,8 +1167,8 @@ ntp
 nuget
 numactl
 nvidia-container-toolkit
+nvidia-dkms
 nvidia-docker-compose
-nvidia-open-dkms
 nvidia-utils
 nvm
 oath-toolkit
@@ -1303,6 +1304,8 @@ plasma-workspace
 plasma5support
 playerctl
 pnpm
+poac
+poac-debug
 polkit
 polkit-gnome
 polkit-qt5
@@ -1880,9 +1883,7 @@ xdg-desktop-portal
 xdg-desktop-portal-gnome
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland-git
-xdg-desktop-portal-hyprland-git-debug
 xdg-desktop-portal-kde
-xdg-desktop-portal-wlr
 xdg-user-dirs
 xdg-user-dirs-gtk
 xdg-utils
