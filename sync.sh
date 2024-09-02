@@ -2,4 +2,5 @@ cp /home/i3alumba/.oh-my-zsh/ /home/i3alumba/.config/hypr /home/i3alumba/.config
 cp /home/i3alumba/.clang-format .
 cp /home/i3alumba/.zshrc .
 cp /home/i3alumba/.p10k.zsh .
+cp /home/i3alumba/.latexmkrc .
 yay -Q|cut -f 1 -d " " > yay-packages

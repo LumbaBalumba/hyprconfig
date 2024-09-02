@@ -16,7 +16,8 @@ local opts = {
         null_ls.builtins.diagnostics.curlylint,
         null_ls.builtins.diagnostics.buf,
         null_ls.builtins.diagnostics.actionlint,
-        null_ls.builtins.formatting.shfmt
+        null_ls.builtins.formatting.shfmt,
+        null_ls.builtins.formatting.latexindent
     },
     on_attach = function(client, bufnr)
         if client.supports_method("textDocument/formatting") then
