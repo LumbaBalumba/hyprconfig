@@ -1,3 +1,3 @@
-$dvi_previewer = 'start evince %O %S';
+$dvi_previewer = 'start evince';
 $ps_previewer  = 'start gv --watch';
 $pdf_previewer = 'start evince';
