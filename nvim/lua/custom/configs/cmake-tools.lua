@@ -64,7 +64,7 @@ require("cmake-tools").setup {
 
                 -- Running Tasks
                 start_insert = false, -- If you want to enter terminal with :startinsert upon using :CMakeRun
-                focus = false, -- Focus on terminal when cmake task is launched.
+                focus = true, -- Focus on terminal when cmake task is launched.
                 do_not_add_newline = false -- Do not hit enter on the command inserted when using :CMakeRun, allowing a chance to review or modify the command before hitting enter.
             } -- terminal executor uses the values in cmake_terminal
         }
@@ -104,7 +104,7 @@ require("cmake-tools").setup {
 
                 -- Running Tasks
                 start_insert = false, -- If you want to enter terminal with :startinsert upon using :CMakeRun
-                focus = false, -- Focus on terminal when cmake task is launched.
+                focus = true, -- Focus on terminal when cmake task is launched.
                 do_not_add_newline = false -- Do not hit enter on the command inserted when using :CMakeRun, allowing a chance to review or modify the command before hitting enter.
             }
         }

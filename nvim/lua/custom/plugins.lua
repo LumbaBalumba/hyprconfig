@@ -98,12 +98,11 @@ local plugins = {
         opts = function() return require "custom.configs.null-ls" end
     }, {
         "Civitasv/cmake-tools.nvim",
-        lazy = true,
+        lazy = false,
         dependencies = {"nvim-lua/plenary.nvim", "stevearc/overseer.nvim"},
         config = function() require "custom.configs.cmake-tools" end
     }, {"tpope/vim-dadbod", lazy = false},
-    {"kristijanhusak/vim-dadbod-ui", lazy = false}, -- {
-    {
+    {"kristijanhusak/vim-dadbod-ui", lazy = false}, {
         "nvim-treesitter/nvim-treesitter",
         opts = {
             ensure_installed = {
@@ -115,11 +114,10 @@ local plugins = {
                 "sql", "vim", "vue", "xml", "yaml", "zig", "gotmpl", "glimmer"
             }
         }
-    },
-    {
+    }, {
         "Ramilito/kubectl.nvim",
-        config = function() require("kubectl").setup() end
-
+        config = function() require("kubectl").setup() end,
+        lazy = true
     }, {
         "ldelossa/gh.nvim",
         lazy = false,
@@ -132,7 +130,7 @@ local plugins = {
         config = function() require("litee.gh").setup() end
     }, {
         "elixir-tools/elixir-tools.nvim",
-        lazy = true,
+        lazy = false,
         version = "*",
         config = function()
             local elixir = require("elixir")
@@ -159,7 +157,45 @@ local plugins = {
         dependencies = {"nvim-lua/plenary.nvim"}
     }, {'mustache/vim-mustache-handlebars', ft = {'html', 'hbs', 'handlebars'}},
     {"cespare/vim-go-templates", ft = {"go", "tmpl"}, config = function() end},
-    {"burnettk/vim-jenkins"}, {"nvim-java/nvim-java"}
+    {"burnettk/vim-jenkins"}, {"nvim-java/nvim-java"}, {
+        "3rd/image.nvim",
+        lazy = false,
+        config = function()
+            require('image').setup {
+                backend = "kitty",
+                integrations = {
+                    markdown = {
+                        enabled = true,
+                        clear_in_insert_mode = false,
+                        download_remote_images = true,
+                        only_render_image_at_cursor = false,
+                        filetypes = {"markdown", "vimwiki"} -- markdown extensions (ie. quarto) can go here
+                    },
+                    neorg = {
+                        enabled = true,
+                        clear_in_insert_mode = false,
+                        download_remote_images = true,
+                        only_render_image_at_cursor = false,
+                        filetypes = {"norg"}
+                    },
+                    html = {enabled = false},
+                    css = {enabled = false}
+                },
+                max_width = nil,
+                max_height = nil,
+                max_width_window_percentage = nil,
+                max_height_window_percentage = 50,
+                window_overlap_clear_enabled = false, -- toggles images when windows are overlapped
+                window_overlap_clear_ft_ignore = {"cmp_menu", "cmp_docs", ""},
+                editor_only_render_when_focused = true, -- auto show/hide images when the editor gains/looses focus
+                tmux_show_only_in_active_window = true, -- auto show/hide images in the correct Tmux window (needs visual-activity off)
+                hijack_file_patterns = {
+                    "*.png", "*.jpg", "*.jpeg", "*.gif", "*.webp", "*.avif"
+                } -- render image files as images when opened
+
+            }
+        end
+    }
 }
 
 return plugins
