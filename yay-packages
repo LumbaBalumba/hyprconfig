@@ -166,7 +166,6 @@ dhclient
 diffuse
 diffutils
 ding-libs
-discord
 djvulibre
 dkms
 dmidecode
@@ -252,6 +251,7 @@ firefox
 firefox-developer-edition
 firewalld
 fish
+fisher
 flac
 flatpak
 flex
@@ -820,6 +820,7 @@ liblrdf
 libltc
 libluv
 liblxqt
+liblzf
 libmad
 libmalcontent
 libmanette
@@ -940,6 +941,7 @@ libtiff
 libtirpc
 libtommath
 libtool
+libtpms
 libtraceevent
 libtracefs
 libunibreak
@@ -1410,6 +1412,7 @@ python-packaging
 python-parso
 python-patch-ng
 python-pathspec
+python-pdftotext
 python-pexpect
 python-pillow
 python-pip
@@ -1617,6 +1620,7 @@ scons
 sd
 sdbus-cpp
 sddm
+sdl12-compat
 sdl2
 seabios
 seatd
@@ -1714,6 +1718,7 @@ texlive-fontutils
 texlive-formatsextra
 texlive-games
 texlive-humanities
+texlive-langcyrillic
 texlive-latex
 texlive-latexextra
 texlive-latexrecommended
@@ -1802,6 +1807,7 @@ vid.stab
 vim
 vim-runtime
 virtiofsd
+virtualbox-host-dkms
 visual-studio-code-bin
 visual-studio-code-bin-debug
 vlc
