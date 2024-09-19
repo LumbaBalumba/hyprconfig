@@ -101,8 +101,17 @@ local plugins = {
         lazy = false,
         dependencies = {"nvim-lua/plenary.nvim", "stevearc/overseer.nvim"},
         config = function() require "custom.configs.cmake-tools" end
-    }, {"tpope/vim-dadbod", lazy = false},
-    {"kristijanhusak/vim-dadbod-ui", lazy = false}, {
+    }, {"tpope/vim-dadbod", lazy = false}, {
+        "kristijanhusak/vim-dadbod-ui",
+        lazy = false
+        -- dependencies = {
+        --     {
+        --         'kristijanhusak/vim-dadbod-completion',
+        --         -- ft = {'sql', 'mysql', 'plsql'},
+        --         lazy = false
+        --     }
+        -- }
+    }, {
         "nvim-treesitter/nvim-treesitter",
         opts = {
             ensure_installed = {
