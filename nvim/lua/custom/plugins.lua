@@ -204,6 +204,11 @@ local plugins = {
 
             }
         end
+    }, {
+        "NvChad/nvterm",
+        config = function()
+            require('nvterm').setup() -- Ensure that nvterm is initialized
+        end
     }
 }
 
