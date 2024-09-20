@@ -205,10 +205,10 @@ local plugins = {
             }
         end
     }, {
-        "NvChad/nvterm",
-        config = function()
-            require('nvterm').setup() -- Ensure that nvterm is initialized
-        end
+        "rbong/vim-flog",
+        lazy = false,
+        cmd = {"Flog", "Flogsplit", "Floggit"},
+        dependencies = {"tpope/vim-fugitive"}
     }
 }
 
