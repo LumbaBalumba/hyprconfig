@@ -83,5 +83,9 @@ M.python = {
 }
 
 -- M.ai = {n = {["<leader>ch"] = {"<cmd> <CR>", "Open AI chat"}}}
+--
+--
+
+M.flog = {n = {["<leader>gs"] = {"<cmd> Flog <CR>", "Open git tree"}}}
 
 return M
