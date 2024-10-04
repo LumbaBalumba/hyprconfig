@@ -19,8 +19,7 @@ lspconfig.pyright.setup({
                                                      venv:joinpath("bin",
                                                                    "python"))
         else
-            config_.settings.python.pythonPath =
-                tostring(venv:joinpath("Scripts", "python.exe"))
+            config_.settings.python.pythonPath = tostring("python")
         end
     end
 })
@@ -43,7 +42,7 @@ local function organize_imports()
     vim.lsp.buf.execute_command(params)
 end
 
-lspconfig.tsserver.setup({
+lspconfig.ts_ls.setup({
     on_attach = on_attach,
     capabilities = capabilities,
     init_options = {preferences = {disableSuggestions = true}},

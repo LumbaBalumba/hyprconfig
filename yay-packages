@@ -28,6 +28,10 @@ alsa-ucm-conf
 alsa-utils
 amd-ucode
 amdvlk
+android-sdk-platform-tools
+android-sdk-platform-tools-debug
+android-tools
+android-udev
 anydesk-bin
 anyrun-git
 aom
@@ -131,6 +135,7 @@ comgr
 compiler-rt
 composefs
 composer
+conan
 confuse
 containerd
 convertlit
@@ -145,6 +150,7 @@ curl
 cxxbridge
 dart
 dart-sass
+dash
 dav1d
 db
 db5.3
@@ -182,6 +188,7 @@ dosfstools
 dotconf
 double-conversion
 downgrade
+doxygen
 dracula-grub-theme-git
 dracula-gtk-theme
 dracula-icons-theme
@@ -190,6 +197,7 @@ dtc
 dtkcommon
 dtkcore
 dtkgui
+dtklog
 dtkwidget
 duf
 duktape
@@ -203,6 +211,7 @@ efibootmgr
 efitools
 efivar
 efl
+egl-gbm
 egl-wayland
 eglexternalplatform
 electron
@@ -534,6 +543,7 @@ kdsoap-qt5
 kdsoap-qt6
 kdsoap-ws-discovery-client
 kemoticons
+kemoticons-debug
 keyutils
 kfilemetadata
 kfilemetadata5
@@ -969,6 +979,7 @@ libvdpau
 libverto
 libvips
 libvisio
+libvlc
 libvorbis
 libvpl
 libvpx
@@ -1382,6 +1393,7 @@ python-h11
 python-html5lib
 python-httplib2
 python-httptools
+python-hypothesis
 python-idna
 python-importlib-metadata
 python-inflect
@@ -1414,6 +1426,7 @@ python-more-itertools
 python-msgpack
 python-mypy_extensions
 python-node-semver
+python-numpy
 python-ordered-set
 python-orjson
 python-packaging
@@ -1446,6 +1459,7 @@ python-pyproject-hooks
 python-pyqt5
 python-pyqt5-sip
 python-pyrsistent
+python-pyrsistent-debug
 python-pytest
 python-pytest-xdist
 python-pytz
@@ -1470,6 +1484,7 @@ python-shellingham
 python-shtab
 python-shutilwhich
 python-six
+python-sortedcontainers
 python-sqlparse
 python-svglib
 python-termcolor
@@ -1512,6 +1527,7 @@ qqc2-desktop-style5
 qrencode
 qt5-base
 qt5-declarative
+qt5-doc
 qt5-graphicaleffects
 qt5-imageformats
 qt5-location
@@ -1645,7 +1661,6 @@ semver
 sensors-lxpanel-plugin
 sensors-lxpanel-plugin-debug
 serd
-sfml
 sg3_utils
 sgml-common
 shaderc
