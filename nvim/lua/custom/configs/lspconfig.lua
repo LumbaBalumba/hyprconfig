@@ -29,7 +29,7 @@ lspconfig.clangd.setup({
         client.server_capabilities.signatureProvider = false
         on_attach(client, bufnr)
     end,
-    filetypes = {"c", "cpp", "h", "hpp", "cc"},
+    filetypes = {"c", "cpp", "h", "hpp", "cc", "cu", "cuh", "cuda"},
     capabilities = capabilities,
     cmd = {"clangd", "--offset-encoding=utf-16", "--enable-config"}
 })
