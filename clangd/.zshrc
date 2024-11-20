@@ -130,9 +130,3 @@ alias :q="exit"
 alias films="sshfs i3alumba@95.165.90.137:/home/i3alumba/HDD/Films ~/Films"
 
 alias lf="ranger"
-
-export ELECTRON_USE_OZONE=1
-export LD_LIBRARY_PATH=/home/i3alumba/.local/lib/arch-mojo:$LD_LIBRARY_PATH
-export PATH="$PATH:/home/i3alumba/.modular/bin"
-export MODULAR_HOME="/home/i3alumba/.modular"
-export PATH="/home/i3alumba/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
