@@ -1,3 +1,4 @@
+local home = vim.fn.expand("$HOME")
 local plugins = {
     {"christoomey/vim-tmux-navigator", lazy = false}, {
         "williamboman/mason.nvim",
@@ -425,8 +426,7 @@ local plugins = {
         dependencies = {
             'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.nvim'
         }
-    }, -- Lazy
-    {
+    }, {
         "jackMort/ChatGPT.nvim",
         event = "VeryLazy",
         config = function()
@@ -439,13 +439,13 @@ local plugins = {
                     temperature = 0.2,
                     top_p = 0.1,
                     n = 1
-                }
+                },
+                api_key_cmd = "gpg -q -d " .. home .. "/openai_api_key.gpg"
             })
         end,
         dependencies = {
             "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim",
-            "folke/trouble.nvim", -- optional
-            "nvim-telescope/telescope.nvim"
+            "folke/trouble.nvim", "nvim-telescope/telescope.nvim"
         }
     }
 }
