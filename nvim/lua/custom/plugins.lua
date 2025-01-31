@@ -121,7 +121,9 @@ local plugins = {
                 "heex", "java", "csv", "dart", "gitignore", "gitcommit",
                 "gomod", "gosum", "graphql", "html", "htmldjango", "http",
                 "hyprlang", "latex", "make", "nasm", "prisma", "proto", "scss",
-                "sql", "vim", "vue", "xml", "yaml", "zig", "gotmpl", "glimmer", "cuda", "gitcommit", "gitignore", "docker", "glimmer", "markdown", "markdown_inline", "nasm", "nginx",
+                "sql", "vim", "vue", "xml", "yaml", "zig", "gotmpl", "glimmer",
+                "cuda", "gitcommit", "gitignore", "glimmer", "markdown",
+                "markdown_inline", "nasm", "nginx"
             }
         }
     }, {

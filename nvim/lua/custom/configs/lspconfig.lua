@@ -29,7 +29,7 @@ lspconfig.clangd.setup({
         client.server_capabilities.signatureProvider = false
         on_attach(client, bufnr)
     end,
-    filetypes = {"c", "cpp", "h", "hpp", "cc", "cu", "cuh", "cuda"},
+    filetypes = {"c", "cpp", "cuda"},
     capabilities = capabilities,
     cmd = {"clangd", "--offset-encoding=utf-16", "--enable-config"}
 })
@@ -85,6 +85,7 @@ lspconfig.asm_lsp.setup {
     capabilities = capabilities,
     cmd = {"asm-lsp"},
     filetypes = {'asm', 'vmasm'}
+    -- root_dir = vim.fn.expand("$HOME")
 }
 
 lspconfig.jdtls.setup {on_attach = on_attach, capabilities = capabilities}
