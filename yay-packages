@@ -50,9 +50,7 @@ archlinux-keyring
 archlinux-xdg-menu
 argon2
 aribb24
-arm-none-eabi-binutils
-arm-none-eabi-gcc
-arm-none-eabi-newlib
+arm-none-eabi-picolibc
 asar
 asciidoc
 asus-fan-dkms-git
@@ -314,6 +312,7 @@ gammastep
 gawk
 gc
 gcc
+gcc-arm-none-eabi-bin
 gcc-fortran
 gcc-libs
 gcc13
@@ -1006,6 +1005,7 @@ libayatana-appindicator
 libayatana-indicator
 libb2
 libb64
+libblake3
 libblastrampoline
 libblockdev
 libblockdev-crypto
@@ -1430,6 +1430,7 @@ mesa-utils
 meson
 milou
 mimalloc
+minicom
 minikube
 miniupnpc
 minizip
@@ -1631,6 +1632,7 @@ phonon-qt6-vlc
 php
 php-pgsql
 pico-sdk
+picotool
 pinentry
 pipewire
 pipewire-alsa

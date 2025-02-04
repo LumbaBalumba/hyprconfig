@@ -20,13 +20,13 @@ const PROVIDERS = Object.assign(
       model: "gpt-3.5-turbo",
     },
     ollama: {
-      name: "Ollama (Qwen 2.5)",
+      name: "Ollama",
       logo_name: "ollama-symbolic",
       description: "Official Ollama API.\nPricing: Free.",
       base_url: "http://localhost:11434/v1/chat/completions",
       key_get_url: "it's just ollama",
       key_file: "ollama_key.txt",
-      model: "qwen2.5-coder:14b",
+      model: "deepseek-r1:32b",
     },
     openrouter: {
       name: "OpenRouter (Llama-3-70B)",
