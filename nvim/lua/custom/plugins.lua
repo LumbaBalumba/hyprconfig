@@ -239,7 +239,7 @@ local plugins = {
     }, {
         "chrisgrieser/nvim-various-textobjs", -- additional text objects
         lazy = false,
-        opts = {useDefaultKeymaps = true}
+        opts = {keymaps = {useDefault = true}}
     }, {
         "preservim/vim-markdown" -- conceal markdown links
     }, {
@@ -449,7 +449,20 @@ local plugins = {
             "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim",
             "folke/trouble.nvim", "nvim-telescope/telescope.nvim"
         }
-    }
+    }, {
+        'MeanderingProgrammer/render-markdown.nvim',
+        -- dependencies = {
+        -- 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.nvim'
+        -- }, -- if you use the mini.nvim suite
+        -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.icons' }, -- if you use standalone mini plugins
+        dependencies = {
+            'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons'
+        }, -- if you prefer nvim-web-devicons
+        ---@module 'render-markdown'
+        ---@type render.md.UserConfig
+        opts = {},
+        lazy = false
+    }, {"boltlessengineer/zeta.nvim", lazy = false}
 }
 
 return plugins
