@@ -1,13 +1,13 @@
 ---@type ChadrcConfig
 local M = {}
-M.ui = {theme = "catppuccin"}
+M.ui = { theme = "catppuccin" }
 M.plugins = "custom.plugins"
-M.mappings = require("custom.mappings")
+M.mappings = require "custom.mappings"
 
-vim.cmd([[
+vim.cmd [[
     autocmd BufRead,BufNewFile *.tmpl set filetype=gotmpl
     autocmd BufRead,BufNewFile *.gotmpl set filetype=gotmpl
-]])
+]]
 
 vim.opt.smarttab = true
 vim.opt.expandtab = true
@@ -16,11 +16,17 @@ vim.opt.shiftwidth = 4
 vim.opt.softtabstop = 4
 vim.o.termguicolors = true
 
--- python_host_prog = '/usr/bin/python2'
-vim.g.python3_host_prog = '/usr/bin/python3'
-vim.g.loaded_python3_provider = 1
+vim.g.python3_host_prog = "/usr/bin/python3"
 
-vim.g.python_host_prog = '/usr/bin/python3'
-vim.g.loaded_python_provider = 1
+vim.deprecate = function() end
+
+vim.api.nvim_create_autocmd("BufReadPost", {
+  pattern = "*.md",
+  callback = function()
+    if vim.fn.search("^```{python", "nw") ~= 0 then
+      vim.cmd "QuartoActivate"
+    end
+  end,
+})
 
 return M

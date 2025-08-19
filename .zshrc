@@ -136,3 +136,8 @@ export LD_LIBRARY_PATH=/home/i3alumba/.local/lib/arch-mojo:$LD_LIBRARY_PATH
 export PATH="$PATH:/home/i3alumba/.modular/bin"
 export MODULAR_HOME="/home/i3alumba/.modular"
 export PATH="/home/i3alumba/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
+
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
+alias ls=lsd
