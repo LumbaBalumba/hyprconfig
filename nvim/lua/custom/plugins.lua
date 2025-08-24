@@ -611,6 +611,10 @@ local plugins = {
           timeout = 30000, -- ms
           context_window = 1048576, -- Avante default for Gemini in its config
         },
+        openai = {
+          endpoint = "https://openrouter.ai/api/v1",
+          model = "qwen/qwen3-coder:free",
+        },
       },
       dependencies = {
         "nvim-lua/plenary.nvim",
