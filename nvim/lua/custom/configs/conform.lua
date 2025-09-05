@@ -19,6 +19,7 @@ require("conform").setup {
     cmake = { "cmake_format" },
     tex = { "latexindent" },
     proto = { "buf" },
+    r = { "air" },
     -- etc. for all languages needed...
   },
   format_on_save = {
