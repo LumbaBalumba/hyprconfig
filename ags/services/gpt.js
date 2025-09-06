@@ -9,15 +9,6 @@ import { fileExists } from "../modules/.miscutils/files.js";
 const PROVIDERS = Object.assign(
   {
     // There's this list hmm https://github.com/zukixa/cool-ai-stuff/
-    ollama: {
-      name: "Ollama",
-      logo_name: "ollama-symbolic",
-      description: "Official Ollama API.\nPricing: Free.",
-      base_url: "http://localhost:11434/v1/chat/completions",
-      key_get_url: "it's just ollama",
-      key_file: "ollama_key.txt",
-      model: "qwen2.5-coder:7b",
-    },
     openai: {
       name: "OpenAI",
       logo_name: "openai-symbolic",
@@ -27,6 +18,15 @@ const PROVIDERS = Object.assign(
       key_get_url: "https://platform.openai.com/api-keys",
       key_file: "openai_key.txt",
       model: "gpt-3.5-turbo",
+    },
+    ollama: {
+      name: "Ollama",
+      logo_name: "ollama-symbolic",
+      description: "Official Ollama API.\nPricing: Free.",
+      base_url: "http://localhost:11434/v1/chat/completions",
+      key_get_url: "it's just ollama",
+      key_file: "ollama_key.txt",
+      model: "deepseek-r1:32b",
     },
     openrouter: {
       name: "OpenRouter (Llama-3-70B)",
